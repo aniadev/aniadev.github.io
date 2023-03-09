@@ -8,6 +8,7 @@
       </el-carousel-item>
     </el-carousel>
   </div>
+  <p class="">ahihi</p>
 </template>
 
 <script setup lang="ts">

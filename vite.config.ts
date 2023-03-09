@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [vue(), eslint()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+      '@': path.resolve(__dirname, './src')
+    }
+  },
+  build: {
+    outDir: path.join(__dirname, 'docs')
   }
 })

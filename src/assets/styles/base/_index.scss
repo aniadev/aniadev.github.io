@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+$font-stack: 'Open Sans', sans-serif;
+
+//font 2
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
+$font-anchor: 'Archivo', sans-serif;
+
+@import './preset';
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+* {
+  font-family: $font-stack;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+  background: var(--bg-color);
+  font-size: 14px;
+  font-family: $font-stack;
+  font-weight: 400;
+  overflow-x: clip;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

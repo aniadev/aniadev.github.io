@@ -11,6 +11,10 @@ import 'element-plus/dist/index.css'
 import { createPinia } from 'pinia'
 const pinia = createPinia()
 
+// router
+import { router } from './routers'
+
 app.use(ElementPlus)
 app.use(pinia)
+app.use(router)
 app.mount('#app')

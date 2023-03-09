@@ -9,6 +9,8 @@
     </el-carousel>
   </div>
   <p class="">ahihi</p>
+  <router-link to="/login">LOGIN</router-link>
+  <router-view />
 </template>
 
 <script setup lang="ts">

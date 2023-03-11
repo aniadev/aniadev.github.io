@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
+    <meta charset="utf-8" />
+    <title>Page not found - 404</title>
+    <script>
+      // Redirect to index.html if the 404 page is loaded
+      window.location.replace('<%= htmlWebpackPlugin.options.publicPath %>')
+    </script>
   </head>
   <body>
-    <p>TEST 404 page</p>
+    <p>Sorry, the requested page could not be found.</p>
   </body>
 </html>

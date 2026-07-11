@@ -41,8 +41,10 @@ jobs:
           echo "Building native module in: $PKG"
           ( cd "$PKG" && npm run build-release )
 
+      # Call the nuxt binary directly so pnpm's verify-deps-before-run can't fire an implicit
+      # (and failing) reinstall before the build.
       - name: Build static site
-        run: pnpm generate
+        run: ./node_modules/.bin/nuxt generate
         env:
           NITRO_PRESET: github_pages
 

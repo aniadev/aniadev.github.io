@@ -1,0 +1,101 @@
+# compiled output
+/dist
+/node_modules
+**/node_modules
+**/dist
+**/build
+**/*.tsbuildinfo
+.turbo
+**/.turbo
+/build
+*/database
+/hydra
+/cardano-node
+package-log.json
+yarn.lock
+# DB data volumes ignored, but tracked migrations under db/migrations are kept
+/db/*
+!/db/migrations
+.data
+.nuxt
+.output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# dotenv environment variable files — pattern không-slash nên tự phủ MỌI cấp thư mục,
+# gồm cả heads/<headId>/.env per-head (AD-13); .env.example (mọi cấp) giữ commit
+.env
+.env.*
+!.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# operator / deploy signing keys — never commit (supply via out-of-repo path, S2.2 AC3)
+*.skey
+deploy-*.sk
+
+# temp directory
+.temp
+.tmp
+
+# Local/generated tooling artifacts
+.pnpm-store/
+.neuralmemory/
+_bmad-output/review_diff.diff
+
+# Medusa daemon runtime state (checkpoint) — không commit
+.medusa/
+
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# test wallet mnemonics — never commit secrets
+testing/src/wallets.json
+
+# local dev session-key dump (sessionPrivateKey + jwt) — never commit
+sk.json
+sk*.json
+sk*.jso
+
+# Playwright verification artifacts + local screenshots (dev only)
+.playwright-mcp/
+/*.png

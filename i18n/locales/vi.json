@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "role": "Kỹ sư Frontend & Blockchain",
+    "tagline": "Xây dựng và mổ xẻ hệ thống trên Cardano."
+  },
+  "nav": {
+    "writing": "Bài viết",
+    "projects": "Dự án",
+    "about": "Giới thiệu",
+    "home": "Trang chủ"
+  },
+  "actions": {
+    "readMore": "Đọc",
+    "allWriting": "Xem tất cả bài viết",
+    "viewProject": "Kho mã",
+    "viewSource": "Mã nguồn",
+    "backToWriting": "Bài viết",
+    "toggleTheme": "Đổi giao diện",
+    "download": "Tải CV"
+  },
+  "home": {
+    "ledger": "Hồ sơ",
+    "position": "Vị trí",
+    "focus": "Trọng tâm",
+    "based": "Địa điểm",
+    "writes": "Viết về",
+    "location": "Hà Nội, Việt Nam",
+    "intro": "Tôi làm frontend và xây dựng hệ thống on-chain — SDK ví, mở rộng Layer 2, cùng những bài phân tích bảo mật đúc kết từ các sự cố thực tế.",
+    "featuredWriting": "Bài viết chọn lọc",
+    "focusAreas": "Lĩnh vực trọng tâm",
+    "elsewhere": "Nơi khác"
+  },
+  "writing": {
+    "title": "Bài viết",
+    "lead": "Các bài phân tích bảo mật chuyên sâu và tiểu luận kỹ thuật về giao thức. Nội dung dài, nặng về kỹ thuật, viết bằng ngôn ngữ gốc của từng dự án.",
+    "all": "Tất cả",
+    "empty": "Chưa có bài viết nào bằng ngôn ngữ này.",
+    "translationNote": "Bài viết này được viết bằng {lang}.",
+    "toc": "Mục lục",
+    "publishedOn": "Đăng ngày",
+    "filedUnder": "Chủ đề",
+    "readingTime": "{n} phút đọc"
+  },
+  "projects": {
+    "title": "Dự án",
+    "lead": "Công cụ mã nguồn mở và các sản phẩm blockchain thực tế. Một số kho mã và sản phẩm tiêu biểu.",
+    "stars": "sao"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "lead": "Kỹ sư frontend và blockchain. Điều tôi theo đuổi là giữ cho hệ thống chạy đúng ngay cả khi bị tấn công.",
+    "experience": "Kinh nghiệm",
+    "stack": "Công nghệ",
+    "credentials": "Chứng chỉ",
+    "writing": "Bài viết",
+    "contact": "Liên hệ"
+  },
+  "kind": {
+    "security": "Bảo mật",
+    "protocol": "Giao thức",
+    "engineering": "Kỹ thuật",
+    "ai": "AI Agent",
+    "note": "Ghi chú"
+  },
+  "footer": {
+    "built": "Xây bằng Nuxt & Nuxt Content. Dùng chữ Space Grotesk, Inter, JetBrains Mono.",
+    "rights": "Toàn bộ quan điểm là của riêng tác giả."
+  }
+}

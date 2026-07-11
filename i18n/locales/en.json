@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "role": "Frontend & Blockchain Engineer",
+    "tagline": "Building and breaking systems on Cardano."
+  },
+  "nav": {
+    "writing": "Writing",
+    "projects": "Projects",
+    "about": "About",
+    "home": "Index"
+  },
+  "actions": {
+    "readMore": "Read",
+    "allWriting": "All writing",
+    "viewProject": "Repository",
+    "viewSource": "Source",
+    "backToWriting": "Writing",
+    "toggleTheme": "Toggle theme",
+    "download": "Download CV"
+  },
+  "home": {
+    "ledger": "Ledger",
+    "position": "Position",
+    "focus": "Focus",
+    "based": "Based in",
+    "writes": "Writes on",
+    "location": "Hà Nội, Việt Nam",
+    "intro": "I design frontends and build on-chain systems — wallet SDKs, Layer 2 scaling, and the security post-mortems that keep them honest.",
+    "featuredWriting": "Selected writing",
+    "focusAreas": "Focus areas",
+    "elsewhere": "Elsewhere"
+  },
+  "writing": {
+    "title": "Writing",
+    "lead": "Forensic security analyses and protocol-engineering essays. Long-form, technical, in the language the work was done in.",
+    "all": "All",
+    "empty": "No entries in this language yet.",
+    "translationNote": "This entry is written in {lang}.",
+    "toc": "Contents",
+    "publishedOn": "Published",
+    "filedUnder": "Filed under",
+    "readingTime": "{n} min read"
+  },
+  "projects": {
+    "title": "Projects",
+    "lead": "Open-source tooling and applied blockchain work. Selected repositories and products.",
+    "stars": "stars"
+  },
+  "about": {
+    "title": "About",
+    "lead": "Senior frontend and blockchain engineer. I care about correctness under adversarial conditions.",
+    "experience": "Experience",
+    "stack": "Stack",
+    "credentials": "Credentials",
+    "writing": "Writing",
+    "contact": "Contact"
+  },
+  "kind": {
+    "security": "Security",
+    "protocol": "Protocol",
+    "engineering": "Engineering",
+    "ai": "AI Agent",
+    "note": "Note"
+  },
+  "footer": {
+    "built": "Built with Nuxt & Nuxt Content. Set in Space Grotesk, Inter, JetBrains Mono.",
+    "rights": "All notes are the author's own."
+  }
+}

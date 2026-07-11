@@ -28,8 +28,18 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      # pnpm 11 in CI aborts (ERR_PNPM_IGNORED_BUILDS) on pending native build scripts, and its
+      # onlyBuiltDependencies allowlist is not honored on this version — node_modules is fully
+      # populated regardless, so tolerate the exit code and compile the one native dep next.
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile || true
+
+      # Nuxt Content needs the better-sqlite3 native binding at build time.
+      - name: Compile better-sqlite3
+        run: |
+          PKG="$(node -e "console.log(require('path').dirname(require.resolve('better-sqlite3/package.json')))")"
+          echo "Building native module in: $PKG"
+          ( cd "$PKG" && npm run build-release )
 
       - name: Build static site
         run: pnpm generate

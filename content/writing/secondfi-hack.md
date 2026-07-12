@@ -1,7 +1,7 @@
 ---
 title: 'Phân tích toàn diện vụ hack ví SecondFi'
 lang: vi
-date: '2025-11-15'
+date: '2026-06-28'
 kind: security
 featured: true
 readingTime: 14

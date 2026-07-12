@@ -1,47 +1,53 @@
 ---
-title: 'Ghi chú kỹ thuật: sổ tay này được dựng thế nào'
+title: 'Trang này do AI Agent dựng, tôi lo đúng 1% còn lại'
 lang: vi
-date: '2026-07-10'
-kind: engineering
+date: '2026-07-12'
+kind: note
 readingTime: 4
-summary: 'Vài dòng về công nghệ đằng sau trang này - Nuxt, Nuxt Content, và một hệ thống chữ tối giản theo phong cách Thụy Sĩ - cùng ý tưởng mà nó xoay quanh.'
-tags: ['nuxt', 'design', 'meta']
+featured: true
+summary: 'Chuyện cuối tuần rảnh: tôi để AI Agent dựng gần như cả trang này, còn tôi ngồi review với chỉnh câu chữ. Hé lộ hậu trường xíu nè.'
+tags: ['nuxt', 'ai-agent', 'meta']
 ---
 
-Trang này là một cuốn sổ tay, không phải một bảng tin. Nó xoay quanh đúng một mô-típ: **bút toán sổ cái** - một khoá ánh xạ tới một giá trị, đúng hình dạng của một đầu ra eUTXO. Trang chủ trình bày danh tính dưới dạng những dòng sổ cái; mỗi mục đều có một dải nhãn chữ monospace chạy dọc lề trái.
+Hê lô ae, là tôi Ania đây :)))
 
-## Công nghệ
+Cuối tuần rảnh quá, tôi quyết định dựng cái trang này làm profile cá nhân. Mà thú thật luôn: phần lớn code ở đây không phải tôi gõ. Tôi ngồi chỉ đạo, AI Agent gõ. Ước chừng tôi đóng góp đúng... 1%. Cái 1% đó là gì thì lát kể.
 
-Bản dựng được giữ nhỏ gọn và tĩnh một cách có chủ đích.
+## AI làm gần hết, thật
 
-| Tầng | Lựa chọn |
+Tôi mở một AI Agent lên, bảo nó: "dựng cho tôi trang profile tĩnh, tối giản, song ngữ Việt - Anh, deploy lên GitHub Pages". Rồi tôi đi pha cà phê. Lúc quay lại thì bộ khung đã gần xong:
+
+| Tầng | Nó chọn giúp |
 | --- | --- |
 | Framework | Nuxt 4 (tĩnh, prerender) |
 | Nội dung | Nuxt Content + MDC |
-| Giao diện | Token Tailwind CSS v4 |
-| Icon | Iconify (đóng gói cục bộ) |
-| Chữ | Space Grotesk · Inter · JetBrains Mono |
+| Giao diện | Tailwind CSS v4 |
+| Icon + chữ | Iconify, Space Grotesk, Inter, JetBrains Mono (gói cục bộ hết) |
 
-## Bài viết là Markdown
+Tôi gần như không phải mở tài liệu của thư viện nào. Chỗ nào sai thì tôi chỉ, nó sửa. Vòng lặp cứ thế chạy tới khi ưng mắt.
 
-Mỗi bài là một tệp Markdown với frontmatter có kiểu. Các khối chú thích dùng MDC:
-
-```md
-::callout{type="danger" title="Nguyên nhân gốc"}
-Vụ tấn công không cần tới lỗi giao thức - chỉ một giả định sai khi tích hợp là đã đủ.
-::
-```
-
-Kết quả hiển thị:
-
-::callout{type="danger" title="Nguyên nhân gốc"}
-Vụ tấn công không cần tới lỗi giao thức - chỉ một giả định sai khi tích hợp là đã đủ.
+::callout{type="insight" title="1% của tôi nằm ở đâu"}
+Không nằm ở số dòng code, mà ở chỗ *biết mình muốn gì*: chọn phong cách, bỏ cái thừa, và nói "không" đúng lúc. AI gõ nhanh thật, nhưng gu thì vẫn phải là của mình.
 ::
 
-::callout{type="insight" title="Vì sao tĩnh"}
-Một cuốn sổ tay nên sống lâu hơn công cụ tạo ra nó. HTML prerender trên GitHub Pages không có runtime để hỏng theo thời gian.
-::
+## Còn mấy bài viết thì sao?
 
-## Song ngữ ngay từ đầu
+À cái này quan trọng nè. Những bài trong trang không phải AI viết hết đâu nhé. Tôi đọc rất kỹ, sửa lại câu chữ, cắt chỗ tối nghĩa, thêm vào chỗ tôi thật sự nghĩ. AI cho tôi bản nháp nhanh, còn giọng văn cuối cùng là tôi ngồi gọt, hmmhm.
 
-Mỗi bài tự khai báo `lang`. Giao diện đọc ngôn ngữ đã lưu trong cookie và chỉ hiển thị các bài khớp ngôn ngữ đó - không nhân đôi route, không dịch máy.
+Nói kiểu khác: AI là cái máy gõ siêu nhanh, còn tôi là ông biên tập khó tính ngồi cạnh.
+
+## Viết cái gì, cho ai đọc
+
+Đa số bài ở đây là bài kỹ thuật. Thường là tôi đang làm gì đó trong công việc, hoặc vớ được một chủ đề hay hay, thế là lên idea rồi ngồi viết.
+
+Nhưng mà - gần như bài nào tôi cũng cố để lại một phiên bản dễ hiểu cho ae non-tech nữa. Biết đâu bạn ghé vào chỉ vì tò mò tác giả là ai (là tôi nè \:v), hoặc thấy chủ đề đang hot mà lười ngồi "làm toán" với "vẽ đồ thị". Kiểu "má ơi, đọc cái blog giải trí thôi mà cũng bắt hiểu vector à \:v".
+
+Nên yên tâm nha: chỗ nào nặng đô, tôi sẽ cố kể lại bằng tiếng người. Ai thích đào sâu thì có phần kỹ thuật đầy đủ, ai chỉ muốn nắm ý thì đọc bản nhẹ là đủ vui.
+
+## Vì sao tĩnh, vì sao đơn giản
+
+Tôi muốn cái trang này sống lâu. Không backend, không database, không thứ gì phải bảo trì hàng tháng. Chỉ là HTML tĩnh nằm trên GitHub Pages - mười năm nữa mở lại vẫn chạy, không sợ kiểu "lâu ngày không đụng tới nên hỏng".
+
+Song ngữ cũng làm cho nhẹ nhàng: mỗi bài tự khai báo tiếng của nó, giao diện đọc cookie rồi hiện đúng bài đúng thứ tiếng. Không dịch máy, không nhân đôi đường dẫn.
+
+Vậy đó. Một buổi cuối tuần, một con AI Agent chăm chỉ, cộng thêm 1% công "chọn gu" của tôi. Cảm ơn ae đã đọc tới đây :)))

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // MDC block for annotated posts:  ::callout{type="danger" title="Root cause"} … ::
-// Kept quiet — a left rule + small mono label, no fills except a faint tint.
+// Kept quiet - a left rule + small mono label, no fills except a faint tint.
 const props = withDefaults(
   defineProps<{ type?: 'note' | 'insight' | 'warning' | 'danger'; title?: string }>(),
   { type: 'note' },

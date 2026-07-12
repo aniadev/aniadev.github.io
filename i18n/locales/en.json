@@ -1,7 +1,7 @@
 {
   "meta": {
-    "role": "Frontend & Blockchain Engineer",
-    "tagline": "Building and breaking systems on Cardano."
+    "role": "Blockchain & AI Agent Engineer",
+    "tagline": "Building and breaking systems across Cardano, EVM, and AI agents."
   },
   "nav": {
     "writing": "Writing",
@@ -25,7 +25,7 @@
     "based": "Based in",
     "writes": "Writes on",
     "location": "Hà Nội, Việt Nam",
-    "intro": "I design frontends and build on-chain systems — wallet SDKs, Layer 2 scaling, and the security post-mortems that keep them honest.",
+    "intro": "I build on-chain systems across Cardano and EVM - wallet SDKs, Layer 2 scaling, DeFi - research AI agents, and write the security post-mortems that keep it all honest.",
     "featuredWriting": "Selected writing",
     "focusAreas": "Focus areas",
     "elsewhere": "Elsewhere"
@@ -39,7 +39,8 @@
     "toc": "Contents",
     "publishedOn": "Published",
     "filedUnder": "Filed under",
-    "readingTime": "{n} min read"
+    "readingTime": "{n} min read",
+    "search": "Search entries..."
   },
   "projects": {
     "title": "Projects",
@@ -48,7 +49,7 @@
   },
   "about": {
     "title": "About",
-    "lead": "Senior frontend and blockchain engineer. I care about correctness under adversarial conditions.",
+    "lead": "Software, blockchain, and AI-agent engineer. I care about systems that stay correct even under attack, and I stay curious about the basic sciences - physics, chemistry, life, the cosmos.",
     "experience": "Experience",
     "stack": "Stack",
     "credentials": "Credentials",

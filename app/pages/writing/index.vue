@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import type { Kind } from '@/composables/useKind'
+
 const { t, locale } = useI18n()
+const { color, label } = useKind()
 
 const { data: posts } = await useAsyncData('writing-index', () =>
   queryCollection('writing').order('date', 'DESC').all(),
@@ -9,18 +12,30 @@ const localized = computed(() =>
   (posts.value ?? []).filter((p: any) => !p.draft && p.lang === locale.value),
 )
 
-const tags = computed(() => {
-  const set = new Set<string>()
-  localized.value.forEach((p: any) => (p.tags ?? []).forEach((tag: string) => set.add(tag)))
-  return [...set].sort()
+// Category axis = post `kind` (fixed order), not the free-form tag cloud. Only the kinds
+// actually present in the current locale get a pill.
+const KIND_ORDER: Kind[] = ['security', 'protocol', 'engineering', 'ai', 'note']
+const categories = computed(() => {
+  const present = new Set(localized.value.map((p: any) => p.kind))
+  return KIND_ORDER.filter((k) => present.has(k))
 })
 
-const active = ref<string | null>(null)
-watch(locale, () => (active.value = null))
+const active = ref<Kind | null>(null)
+const query = ref('')
+watch(locale, () => {
+  active.value = null
+  query.value = ''
+})
 
-const filtered = computed(() =>
-  active.value ? localized.value.filter((p: any) => (p.tags ?? []).includes(active.value)) : localized.value,
-)
+const filtered = computed(() => {
+  const q = query.value.trim().toLowerCase()
+  return localized.value.filter((p: any) => {
+    if (active.value && p.kind !== active.value) return false
+    if (!q) return true
+    const hay = [p.title, p.summary, ...(p.tags ?? [])].join(' ').toLowerCase()
+    return hay.includes(q)
+  })
+})
 
 useHead({ title: t('writing.title') })
 </script>
@@ -33,8 +48,20 @@ useHead({ title: t('writing.title') })
       <p class="mt-4 text-base leading-relaxed text-muted-foreground">{{ t('writing.lead') }}</p>
     </header>
 
-    <!-- Tag filter -->
-    <div v-if="tags.length" class="mt-10 flex flex-wrap items-center gap-2">
+    <!-- Search -->
+    <div class="mt-10 flex items-center gap-2 border-b border-hairline pb-2 focus-within:border-foreground">
+      <Icon name="lucide:search" class="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
+      <input
+        v-model="query"
+        type="search"
+        :placeholder="t('writing.search')"
+        :aria-label="t('writing.search')"
+        class="w-full bg-transparent text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none"
+      />
+    </div>
+
+    <!-- Category filter -->
+    <div v-if="categories.length" class="mt-5 flex flex-wrap items-center gap-2">
       <button
         type="button"
         class="rounded-full border px-3 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.08em] transition-colors"
@@ -44,14 +71,15 @@ useHead({ title: t('writing.title') })
         {{ t('writing.all') }}
       </button>
       <button
-        v-for="tag in tags"
-        :key="tag"
+        v-for="k in categories"
+        :key="k"
         type="button"
-        class="rounded-full border px-3 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.08em] transition-colors"
-        :class="active === tag ? 'border-foreground bg-foreground text-background' : 'border-border text-muted-foreground hover:border-foreground hover:text-foreground'"
-        @click="active = tag"
+        class="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.08em] transition-colors"
+        :class="active === k ? 'border-foreground bg-foreground text-background' : 'border-border text-muted-foreground hover:border-foreground hover:text-foreground'"
+        @click="active = k"
       >
-        {{ tag }}
+        <span class="h-1.5 w-1.5 rounded-full" :style="{ backgroundColor: color(k) }" aria-hidden="true" />
+        {{ label(k) }}
       </button>
     </div>
 

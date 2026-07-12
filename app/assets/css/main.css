@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
-  Phạm Hải — personal site design tokens.
+  Phạm Hải - personal site design tokens.
   Swiss-minimal: off-white paper, near-black ink, one ultramarine signal accent,
   a functional red reserved for security-tagged writing. Three faces:
   Space Grotesk (display, restrained) · Inter (body) · JetBrains Mono (ledger metadata / code).
@@ -17,11 +17,11 @@
   /* Signal + semantic tokens outside shadcn's managed set. */
   --color-signal: #2647ff; /* lone accent: links, active markers, focus */
   --color-signal-soft: #eef0ff;
-  --color-security: #d4342c; /* forensic red — security post-mortems only */
+  --color-security: #d4342c; /* forensic red - security post-mortems only */
   --color-security-soft: #fdecea;
-  --color-protocol: #0f766e; /* teal — protocol/scaling essays */
-  --color-engineering: #7c5cff; /* violet — engineering notes */
-  --color-ai: #b45309; /* amber — AI agent research */
+  --color-protocol: #0f766e; /* teal - protocol/scaling essays */
+  --color-engineering: #7c5cff; /* violet - engineering notes */
+  --color-ai: #b45309; /* amber - AI agent research */
 
   --tracking-tightish: -0.011em;
   --tracking-display: -0.022em;

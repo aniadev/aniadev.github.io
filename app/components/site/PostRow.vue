@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Kind } from '@/composables/useKind'
 
-// One entry in the writing index — a typographic row, not a card. Numbered because the index
+// One entry in the writing index - a typographic row, not a card. Numbered because the index
 // is a real chronological sequence. Title shifts right on hover to reveal the accent marker.
 const props = defineProps<{
   to: string

@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   // Class-based dark mode toggles `.dark` to match the Tailwind `dark` variant in main.css.
   colorMode: {
     classSuffix: '',
-    preference: 'system',
+    preference: 'dark',
     fallback: 'light',
     storageKey: 'ph-color-mode',
   },

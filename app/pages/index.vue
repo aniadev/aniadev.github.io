@@ -29,7 +29,7 @@ const featured = computed(() => {
 
       <dl class="rise mt-10 max-w-2xl" style="animation-delay: 180ms">
         <LedgerRow :label="t('home.position')">{{ lt(author.role) }}</LedgerRow>
-        <LedgerRow :label="t('home.focus')">Cardano · Hydra Layer 2 · eUTXO</LedgerRow>
+        <LedgerRow :label="t('home.focus')">Cardano · Hydra L2 · EVM · AI Agent</LedgerRow>
         <LedgerRow :label="t('home.writes')">
           {{ t('kind.security') }} · {{ t('kind.protocol') }} · {{ t('kind.ai') }} · {{ t('kind.engineering') }}
         </LedgerRow>

@@ -10,7 +10,7 @@ tags: ['cardano', 'hydra', 'layer-2', 'eutxo', 'scaling']
 canonical: 'https://wiki.ada-defi.io.vn/s/7238aec2-222b-4977-8c71-0952fc773e2a/doc/21-utxo-cho-van-nguoi-choi-xay-dung-leaderboard-sharding-on-chain-tren-cardano-hydra-TKguMf1J1d'
 ---
 
-Trên mô hình eUTXO, một trạng thái dùng chung là một UTXO — và mỗi UTXO chỉ bị tiêu bởi *một* giao dịch tại một thời điểm. Đặt cả một bảng xếp hạng lên một UTXO nghĩa là mọi lượt cập nhật đều tranh chấp cùng một đầu ra: thông lượng giảm còn một giao dịch mỗi block.
+Trên mô hình eUTXO, một trạng thái dùng chung là một UTXO - và mỗi UTXO chỉ bị tiêu bởi *một* giao dịch tại một thời điểm. Đặt cả một bảng xếp hạng lên một UTXO nghĩa là mọi lượt cập nhật đều tranh chấp cùng một đầu ra: thông lượng giảm còn một giao dịch mỗi block.
 
 ::callout{type="insight" title="Luận điểm trung tâm"}
 Bài toán không phải "làm sao ghi nhanh hơn", mà "làm sao để hai người chơi cập nhật điểm *đồng thời* mà không tranh cùng một UTXO".

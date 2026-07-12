@@ -1,7 +1,7 @@
 {
   "meta": {
-    "role": "Kỹ sư Frontend & Blockchain",
-    "tagline": "Xây dựng và mổ xẻ hệ thống trên Cardano."
+    "role": "Kỹ sư Blockchain & AI Agent",
+    "tagline": "Xây dựng và mổ xẻ hệ thống trên Cardano, EVM và AI Agent."
   },
   "nav": {
     "writing": "Bài viết",
@@ -25,7 +25,7 @@
     "based": "Địa điểm",
     "writes": "Viết về",
     "location": "Hà Nội, Việt Nam",
-    "intro": "Tôi làm frontend và xây dựng hệ thống on-chain — SDK ví, mở rộng Layer 2, cùng những bài phân tích bảo mật đúc kết từ các sự cố thực tế.",
+    "intro": "Tôi xây hệ thống on-chain trên Cardano và EVM - SDK ví, mở rộng Layer 2, DeFi - nghiên cứu AI Agent, và viết những bài phân tích bảo mật đúc kết từ các sự cố thực tế.",
     "featuredWriting": "Bài viết chọn lọc",
     "focusAreas": "Lĩnh vực trọng tâm",
     "elsewhere": "Nơi khác"
@@ -39,7 +39,8 @@
     "toc": "Mục lục",
     "publishedOn": "Đăng ngày",
     "filedUnder": "Chủ đề",
-    "readingTime": "{n} phút đọc"
+    "readingTime": "{n} phút đọc",
+    "search": "Tìm bài viết..."
   },
   "projects": {
     "title": "Dự án",
@@ -48,7 +49,7 @@
   },
   "about": {
     "title": "Giới thiệu",
-    "lead": "Kỹ sư frontend và blockchain. Điều tôi theo đuổi là giữ cho hệ thống chạy đúng ngay cả khi bị tấn công.",
+    "lead": "Kỹ sư phần mềm, blockchain và AI Agent. Tôi quan tâm đến việc hệ thống chạy đúng ngay cả khi bị tấn công, và luôn tò mò với khoa học cơ bản - vật lý, hóa học, sự sống, vũ trụ.",
     "experience": "Kinh nghiệm",
     "stack": "Công nghệ",
     "credentials": "Chứng chỉ",

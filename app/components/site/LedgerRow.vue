@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// A key:value ledger entry — the hero's core motif (echoes an eUTXO output: an address key
+// A key:value ledger entry - the hero's core motif (echoes an eUTXO output: an address key
 // mapped to a value). Left key is monospace + uppercase; right value carries the content.
 defineProps<{ label: string }>()
 </script>

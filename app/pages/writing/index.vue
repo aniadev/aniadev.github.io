@@ -8,12 +8,11 @@ const { data: posts } = await useAsyncData('writing-index', () =>
   queryCollection('writing').order('date', 'DESC').all(),
 )
 
-const localized = computed(() =>
-  (posts.value ?? []).filter((p: any) => !p.draft && p.lang === locale.value),
-)
+const { order } = usePostOrder()
+const localized = computed(() => order(posts.value as any[]))
 
 // Category axis = post `kind` (fixed order), not the free-form tag cloud. Only the kinds
-// actually present in the current locale get a pill.
+// actually present get a pill.
 const KIND_ORDER: Kind[] = ['security', 'protocol', 'engineering', 'ai', 'note']
 const categories = computed(() => {
   const present = new Set(localized.value.map((p: any) => p.kind))
@@ -96,6 +95,7 @@ useHead({ title: t('writing.title') })
           :date="p.date"
           :kind="p.kind"
           :reading-time="p.readingTime"
+          :lang="p.lang"
         />
       </template>
       <p v-else class="border-t border-hairline py-16 text-center text-sm text-muted-foreground">

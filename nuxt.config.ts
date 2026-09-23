@@ -56,11 +56,9 @@ export default defineNuxtConfig({
       { code: 'en', name: 'English', file: 'en.json' },
     ],
     langDir: 'locales',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'ph-lang',
-      redirectOn: 'root',
-    },
+    // No browser detection: the prerendered HTML is always `vi`, so switching on first paint
+    // caused hydration mismatches. A manual choice is persisted by plugins/lang-cookie.client.ts.
+    detectBrowserLanguage: false,
   },
 
   content: {

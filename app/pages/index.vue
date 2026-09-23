@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { author, links, focusAreas, type Locale } from '@/data/site'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const { lt } = useLocaleText()
 
 const { data: posts } = await useAsyncData('home-writing', () =>
   queryCollection('writing').order('date', 'DESC').all(),
 )
 
+const { order } = usePostOrder()
 const featured = computed(() => {
-  const all = (posts.value ?? []).filter((p: any) => !p.draft && p.lang === locale.value)
+  const all = order(posts.value as any[])
   const picks = all.filter((p: any) => p.featured)
   return (picks.length ? picks : all).slice(0, 4)
 })
@@ -64,6 +65,7 @@ const featured = computed(() => {
           :date="p.date"
           :kind="p.kind"
           :reading-time="p.readingTime"
+          :lang="p.lang"
         />
       </div>
       <NuxtLink to="/writing" class="mt-8 inline-flex items-center gap-1.5 text-sm text-foreground">

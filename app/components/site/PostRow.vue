@@ -11,9 +11,12 @@ const props = defineProps<{
   date?: string
   kind?: Kind
   readingTime?: number
+  lang?: string
 }>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+// Posts are not translated in place; flag the ones written in the other language.
+const foreign = computed(() => !!props.lang && props.lang !== locale.value)
 const num = computed(() => String(props.index).padStart(2, '0'))
 const displayDate = computed(() => (props.date ? props.date.slice(0, 10) : ''))
 </script>
@@ -41,6 +44,13 @@ const displayDate = computed(() => (props.date ? props.date.slice(0, 10) : ''))
         </p>
         <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
           <KindTag v-if="kind" :kind="kind" />
+          <span
+            v-if="foreign"
+            class="rounded-sm border border-border px-1.5 py-px font-mono text-[0.625rem] uppercase tracking-[0.08em] text-muted-foreground"
+            :title="lang === 'vi' ? 'Tiếng Việt' : 'English'"
+          >
+            {{ lang }}
+          </span>
           <span v-if="readingTime" class="font-mono text-[0.6875rem] text-muted-foreground/80">
             {{ t('writing.readingTime', { n: readingTime }) }}
           </span>

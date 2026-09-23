@@ -35,7 +35,7 @@
     "lead": "Các bài phân tích bảo mật chuyên sâu và tiểu luận kỹ thuật về giao thức. Nội dung dài, nặng về kỹ thuật, viết bằng ngôn ngữ gốc của từng dự án.",
     "all": "Tất cả",
     "empty": "Chưa có bài viết nào bằng ngôn ngữ này.",
-    "translationNote": "Bài viết này được viết bằng {lang}.",
+    "translationNote": "Bài viết này viết bằng {lang}.",
     "toc": "Mục lục",
     "publishedOn": "Đăng ngày",
     "filedUnder": "Chủ đề",
@@ -64,7 +64,7 @@
     "note": "Ghi chú"
   },
   "footer": {
-    "built": "Xây bằng Nuxt & Nuxt Content. Dùng chữ Space Grotesk, Inter, JetBrains Mono.",
+    "built": "Xây bằng Nuxt & Nuxt Content. Dùng font Space Grotesk, Inter, JetBrains Mono.",
     "rights": "Toàn bộ quan điểm là của riêng tác giả."
   }
 }

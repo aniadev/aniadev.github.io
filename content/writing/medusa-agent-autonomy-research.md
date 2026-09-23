@@ -15,7 +15,7 @@ Nghiên cứu này đối chiếu quy trình khai sinh một *head* (một trợ
 Kiến trúc khai sinh head hiện tại **không lạc hậu**. Nhiều quyết định trùng khớp *độc lập* với pattern mà literature 2026 xác nhận là đúng - vì cả runbook lẫn literature đều xuất phát từ cùng ràng buộc thực tế (giới hạn context-window, an toàn bộ nhớ, chi phí LLM-call) nên hội tụ về giải pháp tương tự.
 ::
 
-Tổng cộng **12 khoảng trống** được định vị: 3 nên làm ngay (chi phí thấp, không đổi kiến trúc), 3 nên làm sớm (effort vừa, giữ nguyên invariant), và 6 để sau (v2/v3 - đều đã được runbook chủ động xếp vào non-goal).
+Tổng cộng **12 khoảng trống** được định vị: 3 nên làm ngay (chi phí thấp, không đổi kiến trúc), 3 nên làm sớm (effort vừa, giữ nguyên invariant), và 6 để sau (v2/v3 - runbook đều đã chủ động xếp vào non-goal).
 
 ## Phương pháp & phạm vi
 
@@ -59,15 +59,15 @@ Giới hạn cần nói rõ: dựa trên web-search 2026 + cross-check đa ngu�
 Con người chỉ bắt được hành động xấu khoảng **9-26%** số lần nếu chỉ có một nút "Approve" trơ trọi - cần challenge-and-response (hiện rõ intent, phạm vi, cách rollback) trước khi duyệt.
 ::
 
-**medusa-ai.** Đã có approval gate + quiet-hours + budget/kill-switch/TTL - khớp checklist khá sát; SOUL là file tĩnh nên an toàn khỏi self-edit. Điểm thiếu: boot thẳng full autonomy (chưa có shadow-mode); approval một chạm chưa phải checklist.
+**medusa-ai.** Đã có approval gate + quiet-hours + budget/kill-switch/TTL - khớp checklist khá sát; SOUL là file tĩnh nên không lo bị self-edit. Điểm thiếu: boot thẳng full autonomy (chưa có shadow-mode); approval một chạm chưa phải checklist.
 
 **Kết luận:** khớp sát. Hai cải tiến nên làm: (a) giai đoạn observe-only trước go-live, (b) đổi approval sang checklist intent/phạm vi/rollback.
 
 ## Identity / Persona Drift Detection
 
-**State-of-art.** Persona drift là hiện tượng **đã đo được**: một persona không sống sót qua phiên agentic dài. Công cụ: SyncScore (lệch tông/giọng), ContextEcho (drift tới 19% giữa các LLM), CUSUM (phát hiện "phẳng cảm xúc" dần qua 60 ngày mô phỏng).
+**State-of-art.** Persona drift là hiện tượng **đã đo được**: một persona khó duy trì qua phiên agentic dài. Công cụ: SyncScore (lệch tông/giọng), ContextEcho (drift tới 19% giữa các LLM), CUSUM (phát hiện "phẳng cảm xúc" dần qua 60 ngày mô phỏng).
 
-**medusa-ai.** Battery cá tính đo baseline consistency + divergence **một lần lúc khai sinh** - đúng hướng, nhưng chỉ là snapshot. Chưa có cơ chế đo lại định kỳ và so với baseline để bắt trôi dạt sau hàng trăm tương tác thật.
+**medusa-ai.** Battery cá tính đo baseline consistency + divergence **một lần lúc khai sinh** - đúng hướng, nhưng chỉ là snapshot. Chưa có cơ chế đo lại định kỳ và so với baseline để phát hiện drift sau hàng trăm tương tác thật.
 
 **Kết luận:** gap nên làm ngay - thêm một bước drift-check nhẹ định kỳ làm cầu nối tới battery đầy đủ ở v2.
 

@@ -51,7 +51,7 @@ export const focusAreas: FocusArea[] = [
     icon: 'simple-icons:ethereum',
     title: { vi: 'EVM · DeFi', en: 'EVM · DeFi' },
     body: {
-      vi: 'DeFi trên Ethereum - sàn giao dịch, cầu nối, stake pool - và một chain riêng fork từ nó, vận hành từ đầu đến cuối.',
+      vi: 'DeFi trên Ethereum - sàn giao dịch, cầu nối, stake pool - và một chain riêng fork từ đó, vận hành từ đầu đến cuối.',
       en: 'DeFi on Ethereum - exchanges, bridges, staking pools - and a chain of its own forked from it, run end to end.',
     },
   },
@@ -182,7 +182,7 @@ export const projects: Project[] = [
     stars: 96,
     tags: ['Vue', 'LAN', 'Tooling'],
     summary: {
-      vi: 'Macro pad tự lưu trữ, chỉ chạy trong mạng LAN, biến điện thoại Android thành bàn phím lệnh.',
+      vi: 'Macro pad tự host, chỉ chạy trong mạng LAN, biến điện thoại Android thành bàn phím lệnh.',
       en: 'Self-hosted, LAN-only macro pad that turns an Android phone into a programmable command deck.',
     },
   },
@@ -204,7 +204,7 @@ export const projects: Project[] = [
     lang: 'JavaScript',
     tags: ['Aiken', 'Prettier', 'DX'],
     summary: {
-      vi: 'Plugin định dạng mã cho ngôn ngữ hợp đồng thông minh Aiken.',
+      vi: 'Plugin định dạng code cho ngôn ngữ smart contract Aiken.',
       en: 'Code-formatter plugin for the Aiken smart-contract language.',
     },
   },

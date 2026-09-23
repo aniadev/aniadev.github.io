@@ -4,15 +4,15 @@ lang: vi
 date: '2026-04-01'
 kind: engineering
 readingTime: 11
-summary: 'Hydra Fly là một game kỹ năng thời gian thực chạy trên Cardano Hydra. Kể lại hành trình dựng nó qua bốn lần "vỡ trận": một cuộc tấn công mô phỏng vật lý không cần hack, một thiết kế khoá hơn 20.000 ADA một cách vô ích, và bài toán tranh chấp UTXO suýt bóp nghẹt thông lượng.'
+summary: 'Hydra Fly là một game kỹ năng thời gian thực chạy trên Cardano Hydra. Kể lại hành trình dựng game qua bốn lần "vỡ trận": một cuộc tấn công mô phỏng vật lý không cần hack, thiết kế khoá hơn 20.000 ADA để không làm gì, và bài toán tranh chấp UTXO suýt bóp nghẹt thông lượng.'
 tags: ['cardano', 'hydra', 'eutxo', 'scaling', 'anti-cheat']
 canonical: 'https://wiki.ada-defi.io.vn/doc/cau-chuyen-xay-dung-hydra-fly-tu-y-tuong-den-mainnet-ready-xeWv01p2VY'
 ---
 
-Một game "Flappy Bird gắn blockchain" nghe đơn giản đến mức dễ xem thường. Thực tế, dựng nó là chuỗi những lần vỡ trận: mỗi lần một giả định tưởng đúng gãy ra, và mỗi lần gãy lại lộ một giới hạn của mô hình eUTXO. Đây là nhật ký bốn lần vỡ trận đó - kể theo đúng thứ tự chúng xảy ra.
+Một game "Flappy Bird gắn blockchain" nghe đơn giản đến mức dễ xem thường. Thực tế, dựng nó là chuỗi những lần vỡ trận: mỗi lần một giả định tưởng đúng gãy ra, và mỗi lần gãy lại lộ một giới hạn của mô hình eUTXO. Đây là nhật ký bốn lần vỡ trận đó - kể theo đúng thứ tự diễn ra.
 
 ::callout{type="insight" title="Luận điểm trung tâm"}
-Bài toán của một game có cược on-chain không phải "kết nối ví và gửi ADA". Nó là ba ràng buộc đồng thời: xác nhận đủ nhanh để không phá trải nghiệm, phí đủ thấp để stake nhỏ vẫn có lãi, và *provably fair* - người chơi tự xác minh được kết quả, không phải tin vào server.
+Bài toán của một game có cược on-chain không phải "kết nối ví và gửi ADA", mà là ba ràng buộc đồng thời: xác nhận đủ nhanh để không phá trải nghiệm, phí đủ thấp để stake nhỏ vẫn có lãi, và *provably fair* - người chơi tự xác minh được kết quả, không phải tin vào server.
 ::
 
 Cardano Layer 1 có thời gian xác nhận khoảng 20 giây và phí cố định cho mỗi giao dịch. Không hợp cho microtransaction trong game. Hydra Head giải cả ba ràng buộc cùng lúc: xác nhận dưới 1 giây, phí bằng 0 bên trong Head, và trạng thái vẫn kết toán về L1 bất kỳ lúc nào. Phần còn lại của bài viết là chuyện điều đó gãy ở đâu.
@@ -51,17 +51,17 @@ Lời giải là bỏ hẳn lớp per-player. Admin ký thẳng vào 20 shard UT
 | Số UTXO trong Head | 21 + N (tăng mãi) | **21 cố định** |
 | Thay đổi | - | **-96,5%** |
 
-Ít UTXO hơn không chỉ tiết kiệm ADA. Nó còn giảm độ trễ xác nhận snapshot và giảm bộ nhớ của mọi Hydra node. Một quyết định, ba tầng lợi ích - dấu hiệu của việc gỡ đúng nút thắt.
+Ít UTXO hơn không chỉ tiết kiệm ADA. Cách này còn giảm độ trễ xác nhận snapshot và giảm bộ nhớ của mọi Hydra node. Một quyết định, ba tầng lợi ích - dấu hiệu gỡ đúng nút thắt.
 
 ## Vỡ trận 3: 20 shard, một địa chỉ, một lỗ hổng
 
 Sau khi gộp lớp, 20 shard vẫn nằm chung *một* địa chỉ validator. Đó là cửa cho tấn công đầu độc: bất kỳ ai cũng gửi được ADA tới địa chỉ đó, tạo một UTXO giả mang `shard_id` trùng shard thật. Nếu admin lỡ tiêu nhầm UTXO giả, dữ liệu shard đó biến mất, thay bằng dữ liệu của kẻ tấn công.
 
-Cách chặn là đưa `shard_id` vào tham số compile-time của validator. Mỗi shard giờ có một địa chỉ Cardano riêng - 20 shard, 20 địa chỉ. Không ai tạo được UTXO hợp lệ cho shard 5 tại địa chỉ shard 7, và không có "ô nhiễm chéo" giữa các shard. Một off-chain registry giữ vai trò nguồn sự thật cuối cùng: chỉ UTXO do admin tạo và ghi vào registry mới được công nhận, khoá luôn hướng tấn công tạo UTXO giả trước khi khởi tạo.
+Cách chặn là đưa `shard_id` vào tham số compile-time của validator. Mỗi shard giờ có một địa chỉ Cardano riêng - 20 shard, 20 địa chỉ. Không ai tạo được UTXO hợp lệ cho shard 5 tại địa chỉ shard 7, và không có "ô nhiễm chéo" giữa các shard. Một off-chain registry giữ vai trò nguồn sự thật duy nhất: chỉ UTXO do admin tạo và ghi vào registry mới được công nhận, khoá luôn hướng tấn công tạo UTXO giả trước khi khởi tạo.
 
 ## Vỡ trận 4: hai người ghi điểm cùng lúc
 
-Đây là chỗ mô hình eUTXO đòi nợ. Mỗi UTXO chỉ bị tiêu bởi đúng một giao dịch tại một thời điểm. Hai giao dịch cùng tham chiếu một shard UTXO thì chỉ một thành công, cái kia bị từ chối. Với 20 shard và phân phối ví bằng `keccak256(wallet) % 20`, xác suất va chạm leo rất nhanh:
+Đây là chỗ mô hình eUTXO đòi nợ. Mỗi UTXO chỉ cho phép đúng một giao dịch tiêu tại một thời điểm. Hai giao dịch cùng tham chiếu một shard UTXO thì chỉ một thành công, cái kia bị từ chối. Với 20 shard và phân phối ví bằng `keccak256(wallet) % 20`, xác suất va chạm leo rất nhanh:
 
 ```
 5 ván/giây   → ~2,5% va chạm

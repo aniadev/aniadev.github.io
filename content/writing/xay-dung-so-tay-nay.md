@@ -22,7 +22,7 @@ Tôi mở một AI Agent lên, bảo nó: "dựng cho tôi trang profile tĩnh, 
 | Framework | Nuxt 4 (tĩnh, prerender) |
 | Nội dung | Nuxt Content + MDC |
 | Giao diện | Tailwind CSS v4 |
-| Icon + chữ | Iconify, Space Grotesk, Inter, JetBrains Mono (gói cục bộ hết) |
+| Icon + chữ | Iconify, Space Grotesk, Inter, JetBrains Mono (bundle cục bộ hết) |
 
 Tôi gần như không phải mở tài liệu của thư viện nào. Chỗ nào sai thì tôi chỉ, nó sửa. Vòng lặp cứ thế chạy tới khi ưng mắt.
 
@@ -46,8 +46,8 @@ Nên yên tâm nha: chỗ nào nặng đô, tôi sẽ cố kể lại bằng ti�
 
 ## Vì sao tĩnh, vì sao đơn giản
 
-Tôi muốn cái trang này sống lâu. Không backend, không database, không thứ gì phải bảo trì hàng tháng. Chỉ là HTML tĩnh nằm trên GitHub Pages - mười năm nữa mở lại vẫn chạy, không sợ kiểu "lâu ngày không đụng tới nên hỏng".
+Tôi muốn cái trang này sống lâu. Không backend, không database, không có gì phải bảo trì hàng tháng. Chỉ là HTML tĩnh nằm trên GitHub Pages - mười năm nữa mở lại vẫn chạy, không sợ kiểu "lâu ngày không đụng tới nên hỏng".
 
-Song ngữ cũng làm cho nhẹ nhàng: mỗi bài tự khai báo tiếng của nó, giao diện đọc cookie rồi hiện đúng bài đúng thứ tiếng. Không dịch máy, không nhân đôi đường dẫn.
+Song ngữ cũng làm cho nhẹ nhàng: mỗi bài tự khai báo ngôn ngữ của mình, giao diện đọc cookie rồi hiện đúng bài đúng thứ tiếng. Không dịch máy, không nhân đôi đường dẫn.
 
 Vậy đó. Một buổi cuối tuần, một con AI Agent chăm chỉ, cộng thêm 1% công "chọn gu" của tôi. Cảm ơn ae đã đọc tới đây :)))

@@ -4,16 +4,16 @@ lang: vi
 date: '2025-12-03'
 kind: protocol
 readingTime: 8
-summary: 'Leios mở rộng băng thông Layer 1, nhưng phí mỗi giao dịch vẫn giữ nguyên - và đó là lý do một mình nó không đủ. Phân tích vì sao Leios và Hydra chỉ thực sự mở ra "nhanh và rẻ" khi đi cùng nhau, chứ không phải như hai giải pháp rời.'
+summary: 'Leios mở rộng băng thông Layer 1, nhưng phí mỗi giao dịch vẫn giữ nguyên - nên một mình Leios là không đủ. Phân tích vì sao Leios và Hydra chỉ thực sự mở ra "nhanh và rẻ" khi đi cùng nhau, chứ không phải như hai giải pháp rời.'
 tags: ['cardano', 'hydra', 'layer-2', 'scaling', 'leios']
 canonical: 'https://wiki.ada-defi.io.vn/doc/leios-hydra-cap-bai-trung-mo-ra-ky-nguyen-high-speed-low-fee-tren-cardano-jsrMkQS7ie'
 ---
 
-Người ta thường nói về **Ouroboros Leios** và **Hydra** như hai giải pháp mở rộng riêng biệt. Nhưng đặt cạnh nhau, chúng lộ ra một quan hệ phụ thuộc mà tách rời thì cả hai đều hụt: Leios làm đường rộng ra nhưng không làm phí rẻ đi, còn Hydra làm phí bằng 0 nhưng vẫn phải đi qua cái đường đó. Bài này mổ xẻ đúng chỗ hai mảnh khớp vào nhau.
+Người ta thường nói về **Ouroboros Leios** và **Hydra** như hai giải pháp mở rộng riêng biệt. Nhưng đặt cạnh nhau mới thấy quan hệ phụ thuộc mà tách rời thì cả hai đều hụt: Leios làm đường rộng ra nhưng không làm phí rẻ đi, còn Hydra làm phí bằng 0 nhưng vẫn phải đi qua cái đường đó. Bài này mổ xẻ đúng chỗ hai mảnh khớp vào nhau.
 
 ## Leios: mở rộng con đường
 
-Leios là bản nâng cấp giao thức đồng thuận, tách rời việc *xác thực giao dịch* khỏi việc *tạo khối*. Cơ chế Input Endorsers đóng gói giao dịch song song và liên tục vào các Input Block mà không phải chờ Ranking Block được mint. Kết quả: thông lượng L1 có thể lên mốc 1000+ TPS.
+Leios là bản nâng cấp giao thức đồng thuận, tách rời *xác thực giao dịch* khỏi *tạo khối*. Cơ chế Input Endorsers đóng gói giao dịch song song và liên tục vào các Input Block mà không phải chờ Ranking Block được mint. Kết quả: thông lượng L1 có thể lên mốc 1000+ TPS.
 
 Hình dung con đường làng hai làn thành cao tốc nhiều làn. Xe cộ không còn nối đuôi chờ nhau. Nhưng - và đây là chỗ mấu chốt - mở rộng đường không đụng gì tới *giá vé qua trạm*.
 
@@ -31,7 +31,7 @@ Leios xử lý xong một triệu giao dịch trong chớp mắt. Nhưng 170.000
 
 ## Hydra: đưa việc ra khỏi đường chính
 
-Hydra là Layer 2 dạng isomorphic state channel: nó đẩy giao dịch ra off-chain, xử lý nội bộ trong một Head, rồi chỉ kết toán trạng thái cuối về L1. Bên trong Head: thông lượng cao, finality tức thì, phí gần như bằng 0.
+Hydra là Layer 2 dạng isomorphic state channel: đẩy giao dịch ra off-chain, xử lý nội bộ trong một Head, rồi chỉ kết toán trạng thái cuối về L1. Bên trong Head: thông lượng cao, finality tức thì, phí gần như bằng 0.
 
 Thay vì trả 0,17 ADA mỗi lần qua trạm, bạn mua một vé trọn gói vào khu riêng. Trong khu đó chơi bao nhiêu vòng tuỳ thích với chi phí bằng 0, và chỉ trả phí cổng đúng một lần lúc ra. Bài toán 170.000 ADA/ngày ở trên tan biến.
 
@@ -43,7 +43,7 @@ Thay vì trả 0,17 ADA mỗi lần qua trạm, bạn mua một vé trọn gói 
 Mọi thao tác quản trị Hydra - Open Head, Increment Deposit, Fanout/Close - thực chất đều là *giao dịch L1*. Head chạy nhanh và rẻ, nhưng cửa ra vào Head vẫn nằm trên con đường chính. Nếu L1 tắc, bạn kẹt ngay ở cổng.
 ::
 
-Hydra là con tàu siêu tốc: rẻ và nhanh. Nhưng để lên tàu, bạn phải qua cổng soát vé là L1. Cổng chậm và đông thì tàu nhanh mấy cũng vô nghĩa - bạn mất cả buổi xếp hàng vào ga. Leios chính là thứ mở rộng cổng đó: với băng thông L1 lớn, các giao dịch quản trị Hydra (vốn nặng về script validation) được stream liên tục qua Input Endorsers, và việc Open/Close Head diễn ra gần như tức thì.
+Hydra là con tàu siêu tốc: rẻ và nhanh. Nhưng để lên tàu, bạn phải qua cổng soát vé là L1. Cổng chậm và đông thì tàu nhanh mấy cũng vô nghĩa - bạn mất cả buổi xếp hàng vào ga. Leios chính là thứ mở rộng cổng đó: với băng thông L1 lớn, các giao dịch quản trị Hydra (vốn nặng về script validation) được stream liên tục qua Input Endorsers, và Open/Close Head diễn ra gần như tức thì.
 
 ## Cộng hưởng, không phải cộng dồn
 
@@ -56,4 +56,4 @@ Hydra là con tàu siêu tốc: rẻ và nhanh. Nhưng để lên tàu, bạn ph
 
 Mô hình rút ra là "hybrid scaling": Leios là *lớp vận chuyển* giữ con đường L1 luôn thông để chịu hàng ngàn lượt ra/vào kênh mỗi giây; Hydra là *lớp thực thi* tận dụng sự thông thoáng đó để tạo các luồng giao dịch tốc độ cao, phí bằng 0.
 
-Thiếu Leios, Hydra kẹt ở cổng. Thiếu Hydra, Leios nhanh nhưng vẫn đắt. Điều đáng chú ý không phải mỗi thứ mạnh cỡ nào, mà là chúng vá đúng điểm yếu của nhau: một cái giải băng thông, một cái giải chi phí - và mở rộng thật chỉ xuất hiện ở chỗ hai lời giải gặp nhau.
+Thiếu Leios, Hydra kẹt ở cổng. Thiếu Hydra, Leios nhanh nhưng vẫn đắt. Điều đáng chú ý không phải mỗi thứ mạnh cỡ nào, mà là cả hai vá đúng điểm yếu của nhau: một cái giải băng thông, một cái giải chi phí - và mở rộng thật chỉ xuất hiện ở chỗ hai lời giải gặp nhau.

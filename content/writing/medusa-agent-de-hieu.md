@@ -14,7 +14,7 @@ tags: ['ai-agent', 'giải thích', 'persona']
 
 Hãy tưởng tượng bạn tuyển một nhân viên số làm việc suốt ngày đêm: nhắc mọi người đặt cơm trưa, soạn văn bản, trực nhóm chat. Kiểu cũ là ngồi viết ra hàng nghìn dòng quy tắc cứng nhắc. Cách của Medusa thì khác - họ trao cho AI một **tính cách**, một ít **ký ức khởi đầu**, vài **lằn ranh an toàn**, rồi để nó tự vận hành. Mỗi "nhân viên" như vậy được gọi là một *head*.
 
-Điều bất ngờ: khi đối chiếu cách Medusa tạo ra một head với những nghiên cứu AI công bố năm 2026, phần lớn quyết định của họ lại **ăn khớp với điều khoa học khuyên** - dù nhiều thứ được tự nghĩ ra trước cả khi đọc nghiên cứu.
+Điều bất ngờ: khi đối chiếu cách Medusa tạo ra một head với những nghiên cứu AI công bố năm 2026, phần lớn quyết định của họ lại **ăn khớp với điều khoa học khuyên** - dù nhiều thứ họ tự nghĩ ra trước cả khi đọc nghiên cứu.
 
 > Nuôi AI, hoá ra, gần với nuôi dạy hơn là lập trình.
 

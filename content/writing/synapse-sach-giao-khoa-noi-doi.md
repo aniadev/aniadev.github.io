@@ -4,7 +4,7 @@ lang: vi
 date: '2026-06-12'
 kind: note
 readingTime: 6
-summary: 'Sách vẽ synapse như một công tắc: có xung là có tín hiệu truyền qua. Sự thật thì lỏng lẻo hơn nhiều - mỗi lần "bắn", khe synapse chỉ chịu truyền tín hiệu khoảng 10-40% số lần. Chuyện về sự thất bại có chủ đích, và vì sao bio-synapse-visual cho bạn tự tay kéo cái nút để thấy nó.'
+summary: 'Sách vẽ synapse như một công tắc: có xung là có tín hiệu truyền qua. Sự thật thì lỏng lẻo hơn nhiều - mỗi lần "bắn", khe synapse chỉ chịu truyền tín hiệu khoảng 10-40% số lần. Chuyện về sự thất bại có chủ đích, và vì sao bio-synapse-visual cho bạn tự tay kéo cái nút để thấy tận mắt.'
 tags: ['thần-kinh', 'giải-thích', 'sinh-lý-học']
 ---
 
@@ -14,7 +14,7 @@ tags: ['thần-kinh', 'giải-thích', 'sinh-lý-học']
 
 Hồi đi học, synapse thường được vẽ như một công tắc điện: tế bào thần kinh A "bắn" một xung, tín hiệu chạy qua khe, tế bào B nhận được. Có xung là có truyền. Sạch sẽ, gọn gàng, dễ vẽ lên bảng.
 
-Mô hình đó tiện để bắt đầu. Nó cũng **sai** ở một điểm cốt lõi.
+Mô hình đó tiện để bắt đầu. Nhưng lại **sai** ở một điểm cốt lõi.
 
 ## Sự thật: cái công tắc hay kẹt
 
@@ -36,12 +36,12 @@ Nghe phản trực giác, nhưng sự bấp bênh đó chính là một tính n�
 
 Thứ quyết định synapse "chịu bắn" hay không chủ yếu là **ion calci** tràn vào lúc có xung. Càng nhiều calci, xác suất giải phóng càng cao. Đến đây thì vẫn hợp lý.
 
-Cái hay nằm ở *hình dạng* của mối liên hệ đó. Không phải đường thẳng - kiểu "gấp đôi calci thì gấp đôi xác suất". Nó là một đường cong dốc đứng: xác suất giải phóng tăng theo lượng calci **luỹ thừa gần 4** (chính xác là mũ ~3,8 theo số liệu thực nghiệm).
+Cái hay nằm ở *hình dạng* của mối liên hệ đó. Không phải đường thẳng - kiểu "gấp đôi calci thì gấp đôi xác suất". Mà là một đường cong dốc đứng: xác suất giải phóng tăng theo lượng calci **luỹ thừa gần 4** (chính xác là mũ ~3,8 theo số liệu thực nghiệm).
 
 Nghĩa là sao? Nghĩa là cần **vài** ion calci cùng bắt tay vào thì một bọc chất dẫn truyền mới chịu vỡ - như một khoá an toàn cần xoay đồng thời mấy chìa. Thêm chút calci ở đúng vùng dốc của đường cong có thể khiến xác suất nhảy vọt. Đây là lý do sinh lý học thần kinh cực kỳ nhạy với calci, và vì sao nhiều loại thuốc lẫn độc tố nhắm thẳng vào các kênh calci.
 
 ::callout{type="note" title="Con số này ở đâu ra?"}
-Đường cong luỹ thừa ~3,8 và khoảng xác suất 10-40% trong công cụ không phải bịa cho đẹp - chúng neo vào nghiên cứu thực nghiệm của **Powers & Türker (2010)**. Mỗi chú thích khoa học trong app trỏ thẳng về nguồn gốc đó.
+Đường cong luỹ thừa ~3,8 và khoảng xác suất 10-40% trong công cụ không phải bịa cho đẹp - cả hai đều dựa vào nghiên cứu thực nghiệm của **Powers & Türker (2010)**. Mỗi chú thích khoa học trong app trỏ thẳng về nguồn gốc đó.
 ::
 
 ## Chỗ hay nhất: bạn được tự tay kéo cái nút
@@ -65,6 +65,6 @@ Trong app, bạn thấy cảnh này chạy real-time trên đồ thị điện t
 
 ## Chốt lại
 
-Sách giáo khoa không hẳn nói dối - nó kể một câu chuyện đơn giản để bạn có chỗ bắt đầu. Nhưng sự thật thú vị hơn nhiều: mỗi synapse là một con xúc xắc, gieo có trọng số bởi calci theo một đường cong dốc đến bất ngờ, trượt phần lớn số lần - và chính từ cái bấp bênh đó, gộp qua vô số mối nối, mọc ra thứ đáng tin cậy mà ta gọi là suy nghĩ.
+Sách giáo khoa không hẳn nói dối - cuốn sách kể một câu chuyện đơn giản để bạn có chỗ bắt đầu. Nhưng sự thật thú vị hơn nhiều: mỗi synapse là một con xúc xắc, gieo với trọng số do calci quyết định theo một đường cong dốc đến bất ngờ, trượt phần lớn số lần - và chính từ cái bấp bênh đó, gộp qua vô số mối nối, mọc ra thứ đáng tin cậy mà ta gọi là suy nghĩ.
 
 Cách tốt nhất để tin điều đó không phải đọc lại đoạn trên. Mà là kéo cái nút, gạt sang **Thực tế**, và ngồi nhìn não bạn "trượt".

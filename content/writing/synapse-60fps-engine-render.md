@@ -38,7 +38,7 @@ Hình dung hai phòng ban tách bạch:
 Vì sao lằn ranh này quý đến vậy? Vì mỗi phòng giờ chỉ có một việc, và có thể tối ưu điên cuồng cho đúng một việc đó. Phòng Hoạ đẩy hàng ngàn hạt xuống card đồ hoạ trong một lượt - thứ nó sinh ra để làm. Phòng Vật lý thì đủ *sạch* để đem ra kiểm tra như một bài toán thuần tuý.
 
 ::callout{type="insight" title="Nguyên tắc dẫn đường"}
-"Cái đẹp phục tùng sinh lý." Nghe như khẩu hiệu, nhưng thật ra nó là một ràng buộc kiến trúc: khi hình vẽ và con số cãi nhau, con số luôn thắng. Phòng Hoạ không có quyền phủ quyết.
+"Cái đẹp phục tùng sinh lý." Nghe như khẩu hiệu, nhưng thật ra đây là một ràng buộc kiến trúc: khi hình vẽ và con số cãi nhau, con số luôn thắng. Phòng Hoạ không có quyền phủ quyết.
 ::
 
 ## Trật tự nhân-quả không được phép đảo
@@ -65,10 +65,10 @@ Vì phòng Vật lý không dính gì tới hình vẽ, nó trở thành một h
 
 Luật giải phóng có đúng đường cong không? Điện thế màng có vọt lên rồi reset đúng ngưỡng không? Mỗi câu hỏi thành một bài kiểm tra tự động (Vitest) chạy trong tích tắc - không cần mở trình duyệt, không cần căng mắt nhìn hạt. Nếu ai đó lỡ tay làm sai một luật sinh lý, bài kiểm tra đỏ ngay, trước khi cái sai kịp lên màn hình.
 
-Cái này chỉ có được *nhờ* lằn ranh ở trên. Trộn vật lý vào hình vẽ thì không kiểm tra kiểu này nổi - vì để hỏi "con số đúng chưa" bạn buộc phải dựng cả cảnh WebGL lên.
+Lợi thế này chỉ có được *nhờ* lằn ranh ở trên. Trộn vật lý vào hình vẽ thì không kiểm tra kiểu này nổi - vì để hỏi "con số đúng chưa" bạn buộc phải dựng cả cảnh WebGL lên.
 
 ## Chốt lại
 
-Cả kiến trúc gói gọn trong một câu: **một nơi được tính, một nơi được vẽ, và chúng không chạm vào việc của nhau.**
+Cả kiến trúc gói gọn trong một câu: **một nơi được tính, một nơi được vẽ, và hai bên không chạm vào việc của nhau.**
 
 Nghe đơn giản đến mức dễ xem thường. Nhưng chính lằn ranh mảnh đó là thứ giữ được 60 FPS, giữ được sinh học đúng, và mở ra chuyện tái hiện-y-hệt lẫn kiểm-tra-tự-động - ba thứ tưởng chừng phải đánh đổi lẫn nhau. Không phải nhờ một mẹo thần kỳ nào, mà nhờ chịu khó vẽ ra ranh giới ngay từ dòng code đầu tiên, rồi tôn trọng nó tới dòng cuối.

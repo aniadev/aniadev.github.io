@@ -10,11 +10,11 @@
     "home": "Trang chủ"
   },
   "actions": {
-    "readMore": "Đọc",
+    "readMore": "Đọc tiếp",
     "allWriting": "Xem tất cả bài viết",
-    "viewProject": "Kho mã",
+    "viewProject": "Repo",
     "viewSource": "Mã nguồn",
-    "backToWriting": "Bài viết",
+    "backToWriting": "Quay lại bài viết",
     "toggleTheme": "Đổi giao diện",
     "download": "Tải CV"
   },
@@ -25,14 +25,14 @@
     "based": "Địa điểm",
     "writes": "Viết về",
     "location": "Hà Nội, Việt Nam",
-    "intro": "Hê lô, Ania đây. Ban ngày xây thứ chạy on-chain - Cardano, Hydra, EVM - với nghịch AI Agent; rảnh thì mổ xẻ mấy vụ hack rồi viết lại ở đây, luôn kèm một bản dễ đọc cho ae không rành kỹ thuật.",
+    "intro": "Hê lô, Ania đây. Tôi xây hệ thống on-chain (Cardano, EVM), nghiên cứu AI Agent, và có sở thích mổ xẻ các vụ tấn công bảo mật. Mọi phân tích ở đây đều có phiên bản tóm gọn, dễ hiểu cho người không làm kỹ thuật.",
     "featuredWriting": "Bài viết chọn lọc",
     "focusAreas": "Lĩnh vực trọng tâm",
     "elsewhere": "Nơi khác"
   },
   "writing": {
     "title": "Bài viết",
-    "lead": "Các bài phân tích bảo mật chuyên sâu và tiểu luận kỹ thuật về giao thức. Nội dung dài, nặng về kỹ thuật, viết bằng ngôn ngữ gốc của từng dự án.",
+    "lead": "Các bài phân tích bảo mật chuyên sâu và bài viết kỹ thuật về giao thức. Nội dung đào sâu, giàu chi tiết kỹ thuật, viết bằng ngôn ngữ gốc của từng dự án.",
     "all": "Tất cả",
     "empty": "Chưa có bài viết nào bằng ngôn ngữ này.",
     "translationNote": "Bài viết này viết bằng {lang}.",
@@ -44,15 +44,15 @@
   },
   "projects": {
     "title": "Dự án",
-    "lead": "Công cụ mã nguồn mở và các sản phẩm blockchain thực tế. Một số kho mã và sản phẩm tiêu biểu.",
+    "lead": "Các công cụ mã nguồn mở và sản phẩm blockchain thực tế. Tổng hợp một số dự án và repo tiêu biểu.",
     "stars": "sao"
   },
   "about": {
     "title": "Giới thiệu",
-    "lead": "Kỹ sư phần mềm, blockchain và AI Agent. Tôi quan tâm đến việc hệ thống chạy đúng ngay cả khi bị tấn công, và luôn tò mò với khoa học cơ bản - vật lý, hóa học, sự sống, vũ trụ.",
+    "lead": "Kỹ sư phần mềm tập trung vào blockchain và AI Agent. Tôi chú trọng xây dựng những hệ thống luôn chạy đúng ngay cả khi bị tấn công, và giữ niềm tò mò bền bỉ với khoa học cơ bản: vật lý, hoá học, sự sống, vũ trụ.",
     "experience": "Kinh nghiệm",
     "stack": "Công nghệ",
-    "credentials": "Chứng chỉ",
+    "credentials": "Học vấn & Chứng chỉ",
     "writing": "Bài viết",
     "contact": "Liên hệ"
   },
@@ -64,7 +64,7 @@
     "note": "Ghi chú"
   },
   "footer": {
-    "built": "Xây bằng Nuxt & Nuxt Content. Dùng font Space Grotesk, Inter, JetBrains Mono.",
+    "built": "Xây dựng với Nuxt & Nuxt Content. Kiểu chữ: Space Grotesk, Inter, JetBrains Mono.",
     "rights": "Toàn bộ quan điểm là của riêng tác giả."
   }
 }

@@ -247,7 +247,7 @@ export const experience: Experience[] = [
     role: { vi: 'Kỹ sư Blockchain & Frontend (Senior)', en: 'Senior Blockchain & Frontend Engineer' },
     period: '2023 - nay',
     detail: {
-      vi: 'Xây dựng các hệ thống on-chain trên Cardano và frontend: hydra-sdk, tích hợp Hydra L2 & sharding, hexcore điều phối multi-Hydra, SDK ví và công cụ nội bộ.',
+      vi: 'Phát triển hệ thống on-chain trên Cardano và frontend: hydra-sdk, tích hợp Hydra L2 & sharding, hexcore điều phối multi-Hydra, SDK ví và bộ công cụ nội bộ.',
       en: 'Leading on-chain systems on Cardano and their frontends: hydra-sdk, Hydra L2 integration & sharding, hexcore multi-Hydra orchestration, wallet SDKs, and internal tooling.',
     },
   },
@@ -256,25 +256,25 @@ export const experience: Experience[] = [
     role: { vi: 'Kỹ sư Blockchain (EVM)', en: 'Blockchain Engineer (EVM)' },
     period: '2021 - 2023',
     detail: {
-      vi: 'Xây dựng các sản phẩm DeFi trên Ethereum - sàn giao dịch, cầu nối, stake pool - cùng một network fork từ Ethereum, đưa lên production.',
+      vi: 'Xây dựng các sản phẩm DeFi trên Ethereum (sàn giao dịch, bridge, stake pool) cùng một network fork từ Ethereum, vận hành thực tế trên production.',
       en: 'DeFi primitives on Ethereum - exchanges, bridges, staking pools - plus a full network forked from Ethereum and taken to production.',
     },
   },
   {
     org: 'AI Agent R&D',
-    role: { vi: 'Nghiên cứu & triển khai AI Agent', en: 'AI Agent research & deployment' },
+    role: { vi: 'Nghiên cứu & Phát triển AI Agent', en: 'AI Agent research & deployment' },
     period: '2024 - nay',
     detail: {
-      vi: 'Thiết kế agent tự chủ từ persona, bộ nhớ đến guardrails, và những mô hình vận hành đưa chúng vào đội nhóm, doanh nghiệp nhỏ.',
+      vi: 'Nghiên cứu kiến trúc agent tự chủ (persona, bộ nhớ, guardrails) và các mô hình vận hành để đưa agent vào công việc thực tế của đội nhóm, doanh nghiệp.',
       en: 'Designing autonomous agents from persona to memory to guardrails, and the operating models that put them to work inside small teams and businesses.',
     },
   },
   {
     org: 'Open source',
-    role: { vi: 'Tác giả & người bảo trì', en: 'Author & maintainer' },
+    role: { vi: 'Tác giả & Duy trì dự án', en: 'Author & maintainer' },
     period: '2021 - nay',
     detail: {
-      vi: 'hydra-sdk, hexcore, codesync, prettier-plugin-aiken và các công cụ Rust/Vue khác cho hệ sinh thái Cardano.',
+      vi: 'Tác giả và người đóng góp cho hydra-sdk, hexcore, codesync, prettier-plugin-aiken cùng nhiều công cụ Rust/Vue trong hệ sinh thái Cardano.',
       en: 'hydra-sdk, hexcore, codesync, prettier-plugin-aiken, and other Rust/Vue tooling for the Cardano ecosystem.',
     },
   },
@@ -299,16 +299,16 @@ export const credentials: Credential[] = [
     name: { vi: 'Kỹ sư Nhiệt - Lạnh', en: 'Engineer, Thermal & Refrigeration' },
     issuer: 'ĐH Bách Khoa Hà Nội',
     note: {
-      vi: 'Viện Khoa học và Công nghệ Nhiệt Lạnh (nay là Khoa Năng lượng Nhiệt, Trường Cơ khí) - nền tảng về nhiệt động lực học, điều hòa không khí, nhà máy nhiệt điện và IoT.',
+      vi: 'Viện Khoa học & Công nghệ Nhiệt Lạnh (nay là Khoa Năng lượng Nhiệt, Trường Cơ khí) - nền tảng về nhiệt động lực học, truyền nhiệt, hệ thống điều khiển và IoT.',
       en: 'Institute of Heat & Refrigeration Science and Technology (now the Faculty of Thermal Energy, School of Mechanical Engineering) - a grounding in thermodynamics, HVAC, thermal power plants, and IoT.',
     },
   },
   {
-    name: { vi: 'Chứng chỉ AI - Google', en: 'AI Certificates - Google' },
+    name: { vi: 'Chứng chỉ Chuyên sâu AI & ML', en: 'AI Certificates - Google' },
     issuer: 'Google · Coursera',
     href: 'https://coursera.org/share/72ac2d4d6e3ada494cd0feb771a5f577',
     note: {
-      vi: 'Chuỗi khoá học AI/ML của Google trên Coursera.',
+      vi: 'Chuỗi khóa học chuyên môn về AI/ML của Google trên Coursera.',
       en: 'Google AI/ML course series on Coursera.',
     },
   },

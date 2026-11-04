@@ -40,7 +40,11 @@
     "publishedOn": "Đăng ngày",
     "filedUnder": "Chủ đề",
     "readingTime": "{n} phút đọc",
-    "search": "Tìm bài viết..."
+    "search": "Tìm bài viết...",
+    "credits": {
+      "content": "Nội dung và kiểm duyệt",
+      "writer": "Viết bài"
+    }
   },
   "projects": {
     "title": "Dự án",

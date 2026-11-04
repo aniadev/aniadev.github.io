@@ -2,6 +2,7 @@
 title: 'Synaptic failure: vì sao não bạn "trượt" liên tục mà vẫn hoạt động'
 lang: vi
 date: '2026-06-12'
+writer: 'Claude Fable 5.1'
 kind: note
 readingTime: 5
 summary: 'Sách vẽ synapse như một công tắc: có xung là có tín hiệu. Thực tế, synapse chỉ truyền được 10-40% số lần. Chuyện về synaptic failure, vai trò của calci, và vì sao bio-synapse-visual cho bạn tự tay kéo cái nút.'

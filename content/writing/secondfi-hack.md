@@ -2,6 +2,7 @@
 title: 'Vụ hack ví SecondFi trên Cardano: phương pháp điều tra on-chain'
 lang: vi
 date: '2026-06-28'
+writer: 'Claude Fable 5.1'
 kind: security
 featured: true
 readingTime: 2

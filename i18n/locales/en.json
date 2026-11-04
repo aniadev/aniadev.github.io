@@ -40,7 +40,11 @@
     "publishedOn": "Published",
     "filedUnder": "Filed under",
     "readingTime": "{n} min read",
-    "search": "Search entries..."
+    "search": "Search entries...",
+    "credits": {
+      "content": "Content & review",
+      "writer": "Written by"
+    }
   },
   "projects": {
     "title": "Projects",

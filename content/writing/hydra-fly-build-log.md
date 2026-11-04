@@ -2,6 +2,7 @@
 title: 'Game realtime on-chain trên Cardano Hydra: nhật ký bốn lần vỡ trận'
 lang: vi
 date: '2026-04-01'
+writer: 'Claude Fable 5.1'
 kind: engineering
 readingTime: 7
 summary: 'Hydra Fly là game realtime trên Cardano Hydra. Bốn giả định gãy khi chạm số thật: bot mô phỏng vật lý, 20.000 ADA khoá chết, UTXO giả và shard contention.'

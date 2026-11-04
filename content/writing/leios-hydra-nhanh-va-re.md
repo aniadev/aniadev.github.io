@@ -2,6 +2,7 @@
 title: 'Leios và Hydra: vì sao Cardano cần cả hai để vừa nhanh vừa rẻ'
 lang: vi
 date: '2025-12-03'
+writer: 'Claude Fable 5.1'
 kind: protocol
 readingTime: 5
 summary: 'Leios mở rộng băng thông Layer 1 nhưng không làm phí rẻ đi. Hydra đưa phí về 0 nhưng cổng vào vẫn là giao dịch L1. Cardano chỉ thật sự nhanh và rẻ khi hai mảnh đi cùng nhau.'

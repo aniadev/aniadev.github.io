@@ -2,6 +2,7 @@
 title: 'Prompt caching cho AI agent: cache miss 100% vì một dòng ghép chuỗi'
 lang: vi
 date: '2026-09-23'
+writer: 'Claude Fable 5.1'
 kind: engineering
 readingTime: 11
 summary: 'Một dòng ghép chuỗi đặt memory động trước SOUL tĩnh khiến agent trả full giá input mỗi lượt. Phần đáng kể hơn là ba cái bẫy đo lường prompt cache suýt dẫn tới kết luận sai.'

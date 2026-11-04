@@ -2,6 +2,7 @@
 title: 'AI Agent tự chủ có cá tính: đối chiếu medusa-ai với nghiên cứu 2026'
 lang: vi
 date: '2026-07-11'
+writer: 'Claude Fable 5.1'
 kind: ai
 featured: true
 readingTime: 9

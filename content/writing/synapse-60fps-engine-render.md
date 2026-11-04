@@ -2,6 +2,7 @@
 title: 'Mô phỏng synapse 60 FPS trên trình duyệt: engine tính, render vẽ'
 lang: vi
 date: '2026-06-12'
+writer: 'Claude Fable 5.1'
 kind: engineering
 readingTime: 6
 summary: 'Ghi chú kiến trúc bio-synapse-visual: mô phỏng hàng ngàn hạt ion khuếch tán trong trình duyệt ở 60 FPS với Vue và WebGL. Bí quyết là một lằn ranh: engine tính, render vẽ, không chạm vào việc của nhau.'

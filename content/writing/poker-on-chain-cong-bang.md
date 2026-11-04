@@ -2,6 +2,7 @@
 title: 'Poker on-chain công bằng hơn sòng bài: Kaleidoscope trên Cardano'
 lang: vi
 date: '2026-01-05'
+writer: 'Claude Fable 5.1'
 kind: note
 readingTime: 4
 summary: 'Ở ván poker trực tuyến, thứ quyết định là niềm tin. Bản dễ hiểu về cách Kaleidoscope trên Cardano dùng ZK proof, tiền cọc và smart contract để dời niềm tin từ nhà cái sang toán học.'

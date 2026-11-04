@@ -2,6 +2,7 @@
 title: 'Nuôi một AI agent có tính cách: Medusa làm thế nào, khoa học nói gì'
 lang: vi
 date: '2026-07-10'
+writer: 'Claude Fable 5.1'
 kind: ai
 readingTime: 6
 summary: 'Bản dễ hiểu, không cần biết code: Medusa AI "khai sinh" những trợ lý AI chạy suốt ngày đêm bằng cách nào, và vì sao lối làm ấy trùng khớp với các nghiên cứu AI mới nhất.'

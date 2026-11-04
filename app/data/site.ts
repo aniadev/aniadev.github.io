@@ -11,6 +11,7 @@ export const siteUrl = 'https://aniadev.github.io'
 export const author = {
   name: 'Hải Phạm',
   handle: 'aniadev',
+  nickname: 'Ania',
   initials: 'PH',
   email: 'aniadev.99@gmail.com',
   location: { vi: 'Hà Nội, Việt Nam', en: 'Hà Nội, Vietnam' } as LocaleText,

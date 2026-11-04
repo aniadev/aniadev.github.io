@@ -2,6 +2,7 @@
 title: 'Building a personal blog with an AI agent and Nuxt 4: I did the other 1%'
 lang: en
 date: '2026-07-12'
+writer: 'Claude Fable 5.1'
 kind: note
 readingTime: 3
 featured: true

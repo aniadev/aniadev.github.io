@@ -83,6 +83,15 @@ useHead(() => ({
         <span v-if="post.readingTime">{{ t('writing.readingTime', { n: post.readingTime }) }}</span>
         <span v-for="tag in post.tags" :key="tag" class="text-muted-foreground/80">#{{ tag }}</span>
       </div>
+      <!-- Credits: the author owns content and editorial review; an AI model drafts the prose. -->
+      <dl class="mt-6 grid max-w-md grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
+        <dt class="font-mono text-[0.625rem] uppercase tracking-[0.14em] leading-5 text-muted-foreground">{{ t('writing.credits.content') }}</dt>
+        <dd class="text-foreground">{{ author.nickname }}</dd>
+        <template v-if="post.writer">
+          <dt class="font-mono text-[0.625rem] uppercase tracking-[0.14em] leading-5 text-muted-foreground">{{ t('writing.credits.writer') }}</dt>
+          <dd class="text-foreground">{{ post.writer }}</dd>
+        </template>
+      </dl>
       <ClientOnly>
         <p v-if="post.lang !== locale" class="mt-5 flex items-center gap-2 border-l-2 border-signal pl-3 text-sm text-muted-foreground">
           <Icon name="lucide:languages" class="h-4 w-4 shrink-0" />

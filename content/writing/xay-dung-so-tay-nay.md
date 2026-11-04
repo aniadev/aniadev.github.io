@@ -2,6 +2,7 @@
 title: 'Dựng blog cá nhân bằng AI agent với Nuxt 4: tôi lo đúng 1% còn lại'
 lang: vi
 date: '2026-07-12'
+writer: 'Claude Fable 5.1'
 kind: note
 readingTime: 3
 summary: 'Chuyện một cuối tuần rảnh: tôi để AI agent dựng gần như toàn bộ trang này bằng Nuxt 4, Nuxt Content và Tailwind v4, còn tôi ngồi review và chỉnh câu chữ. Hậu trường, và 1% của tôi nằm ở đâu.'

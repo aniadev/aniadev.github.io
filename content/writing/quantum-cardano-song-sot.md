@@ -2,6 +2,7 @@
 title: 'Máy tính lượng tử và Cardano: vì sao chữ ký ECDSA mới là điểm gãy'
 lang: vi
 date: '2025-11-10'
+writer: 'Claude Fable 5.1'
 kind: security
 readingTime: 5
 summary: 'Mối đe doạ lượng tử với tiền mã hoá không nằm ở thuật toán đào mà ở chữ ký số bảo vệ ví. Phân tích vì sao ECDSA là điểm gãy, và vì sao khả năng sống sót của một chain phụ thuộc vào kiến trúc hơn là một bản vá.'

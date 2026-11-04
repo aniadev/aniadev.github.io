@@ -2,6 +2,7 @@
 title: 'Leaderboard sharding trên Cardano Hydra: 21 UTXO cho vạn người chơi'
 lang: vi
 date: '2025-09-02'
+writer: 'Claude Fable 5.1'
 kind: protocol
 featured: true
 readingTime: 3

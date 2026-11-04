@@ -15,6 +15,8 @@ export default defineContentConfig({
         tags: z.array(z.string()).default([]),
         kind: z.enum(['security', 'protocol', 'engineering', 'ai', 'note']).default('note'),
         readingTime: z.number().optional(),
+        // AI model that drafted the prose. Content and editorial review are always the author's.
+        writer: z.string().optional(),
         featured: z.boolean().default(false),
         canonical: z.string().url().optional(),
         draft: z.boolean().default(false),

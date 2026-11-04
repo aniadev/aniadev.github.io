@@ -6,7 +6,6 @@ kind: note
 readingTime: 4
 summary: 'Ở ván poker trực tuyến, thứ quyết định là niềm tin. Bản dễ hiểu về cách Kaleidoscope trên Cardano dùng ZK proof, tiền cọc và smart contract để dời niềm tin từ nhà cái sang toán học.'
 tags: ['cardano', 'zk', 'gamefi', 'poker', 'giải-thích']
-canonical: 'https://wiki.ada-defi.io.vn/doc/tai-sao-choi-poker-tren-blockchain-lai-an-toan-hon-song-bai-truyen-thong-jJSg3z5YQO'
 ---
 
 Ở một ván poker trực tuyến, thứ quyết định nền tảng có sống nổi không phải giao diện đẹp hay giải thưởng lớn. Nó là *niềm tin*. Và câu hỏi đúng là: bạn đang buộc phải tin ai, và họ có thể phản bội niềm tin đó bằng cách nào?

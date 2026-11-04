@@ -6,7 +6,6 @@ kind: protocol
 readingTime: 5
 summary: 'Leios mở rộng băng thông Layer 1 nhưng không làm phí rẻ đi. Hydra đưa phí về 0 nhưng cổng vào vẫn là giao dịch L1. Cardano chỉ thật sự nhanh và rẻ khi hai mảnh đi cùng nhau.'
 tags: ['cardano', 'hydra', 'leios', 'layer-2', 'scaling', 'ouroboros']
-canonical: 'https://wiki.ada-defi.io.vn/doc/leios-hydra-cap-bai-trung-mo-ra-ky-nguyen-high-speed-low-fee-tren-cardano-jsrMkQS7ie'
 ---
 
 Người ta thường nói về **Ouroboros Leios** và **Hydra** như hai giải pháp mở rộng riêng biệt của Cardano. Đặt chúng cạnh nhau mới thấy một quan hệ phụ thuộc: Leios làm đường rộng ra nhưng không làm phí rẻ đi, còn Hydra làm phí bằng 0 nhưng vẫn phải đi qua con đường đó. Tách rời thì cả hai đều hụt.

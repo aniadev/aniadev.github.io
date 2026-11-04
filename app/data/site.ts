@@ -45,8 +45,8 @@ export const focusAreas: FocusArea[] = [
     icon: 'lucide:layers',
     title: { vi: 'Hydra · Layer 2', en: 'Hydra · Layer 2' },
     body: {
-      vi: 'Tăng thông lượng bằng Hydra Heads - sharding on-chain, bảng xếp hạng cho hàng vạn người chơi.',
-      en: 'Scaling throughput through Hydra Heads - on-chain sharding, leaderboards for tens of thousands of players.',
+      vi: 'Tăng thông lượng bằng Hydra Head: sharding on-chain, bảng xếp hạng cho hàng vạn người chơi.',
+      en: 'Scaling throughput with Hydra Heads: on-chain sharding, leaderboards for tens of thousands of players.',
     },
   },
   {
@@ -54,8 +54,8 @@ export const focusAreas: FocusArea[] = [
     icon: 'simple-icons:ethereum',
     title: { vi: 'EVM · DeFi', en: 'EVM · DeFi' },
     body: {
-      vi: 'DeFi trên Ethereum - sàn giao dịch, cầu nối, stake pool - và một chain riêng fork từ đó, vận hành từ đầu đến cuối.',
-      en: 'DeFi on Ethereum - exchanges, bridges, staking pools - and a chain of its own forked from it, run end to end.',
+      vi: 'DeFi trên Ethereum: sàn giao dịch, cầu nối, stake pool, và một chain riêng fork từ đó, vận hành từ đầu đến cuối.',
+      en: 'DeFi on Ethereum: exchanges, bridges, staking pools, and a chain of its own forked from it, run end to end.',
     },
   },
   {
@@ -63,8 +63,8 @@ export const focusAreas: FocusArea[] = [
     icon: 'lucide:layout-panel-left',
     title: { vi: 'Frontend', en: 'Frontend' },
     body: {
-      vi: 'Vue, Nuxt, TypeScript. Giao diện chính xác, dễ đọc, chịu được tải thật - cho ví, dashboard và công cụ nội bộ.',
-      en: 'Vue, Nuxt, TypeScript. Precise, readable, load-bearing interfaces for wallets, dashboards, and internal tools.',
+      vi: 'Vue, Nuxt, TypeScript. Giao diện chính xác, dễ đọc, chịu được tải thật cho ví, dashboard và công cụ nội bộ.',
+      en: 'Vue, Nuxt, TypeScript. Precise, readable interfaces that hold up under real load, for wallets, dashboards and internal tools.',
     },
   },
   {
@@ -72,8 +72,8 @@ export const focusAreas: FocusArea[] = [
     icon: 'lucide:bot',
     title: { vi: 'AI Agent', en: 'AI agents' },
     body: {
-      vi: 'Agent tự chủ - persona, bộ nhớ, guardrails - và những mô hình vận hành đưa chúng vào đội nhóm và doanh nghiệp nhỏ.',
-      en: 'Autonomous agents - persona, memory, guardrails - and the operating models that put them to work inside small teams and businesses.',
+      vi: 'Agent tự chủ với persona, bộ nhớ và guardrails, cùng mô hình vận hành để đưa chúng vào đội nhóm và doanh nghiệp nhỏ.',
+      en: 'Autonomous agents with persona, memory and guardrails, and the operating models that put them to work inside small teams and businesses.',
     },
   },
   {
@@ -81,8 +81,8 @@ export const focusAreas: FocusArea[] = [
     icon: 'lucide:shield-alert',
     title: { vi: 'Bảo mật', en: 'Security forensics' },
     body: {
-      vi: 'Mổ xẻ sự cố sau tấn công - dựng lại dòng tiền, tìm ra nguyên nhân gốc, rút ra bài học phòng thủ.',
-      en: 'Post-exploit teardowns - reconstructing fund flow, isolating root cause, extracting defensive lessons.',
+      vi: 'Mổ xẻ sự cố sau tấn công: dựng lại dòng tiền, tìm nguyên nhân gốc, rút ra bài học phòng thủ.',
+      en: 'Post-exploit teardowns: reconstructing fund flow, isolating root cause, extracting defensive lessons.',
     },
   },
 ]

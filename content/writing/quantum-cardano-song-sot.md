@@ -6,7 +6,6 @@ kind: security
 readingTime: 5
 summary: 'Mối đe doạ lượng tử với tiền mã hoá không nằm ở thuật toán đào mà ở chữ ký số bảo vệ ví. Phân tích vì sao ECDSA là điểm gãy, và vì sao khả năng sống sót của một chain phụ thuộc vào kiến trúc hơn là một bản vá.'
 tags: ['cardano', 'bitcoin', 'cryptography', 'post-quantum', 'security']
-canonical: 'https://wiki.ada-defi.io.vn/doc/neu-may-tinh-luong-tu-pha-vo-bitcoin-lieu-cardano-co-song-sot-2CU8ahXOKk'
 ---
 
 Máy tính lượng tử không còn là khoa học viễn tưởng. DARPA đã khởi động chương trình QBI (Quantum Benchmarking Initiative) với một câu hỏi dứt khoát: liệu máy tính lượng tử có đạt "quy mô hữu ích", đủ mạnh để phá mã hoá hiện hành, vào khoảng năm 2033 hay không.

@@ -6,7 +6,6 @@ kind: engineering
 readingTime: 7
 summary: 'Hydra Fly là game realtime trên Cardano Hydra. Bốn giả định gãy khi chạm số thật: bot mô phỏng vật lý, 20.000 ADA khoá chết, UTXO giả và shard contention.'
 tags: ['cardano', 'hydra', 'eutxo', 'scaling', 'anti-cheat', 'game-on-chain']
-canonical: 'https://wiki.ada-defi.io.vn/doc/cau-chuyen-xay-dung-hydra-fly-tu-y-tuong-den-mainnet-ready-xeWv01p2VY'
 ---
 
 Hydra Fly là một game kỹ năng kiểu Flappy Bird, có cược, chạy trên Cardano Hydra. Nghe đơn giản. Thực tế, dựng nó là bốn lần một giả định tưởng đúng bị gãy khi gặp số thật. Mỗi lần gãy lại lộ ra một giới hạn của mô hình eUTXO.

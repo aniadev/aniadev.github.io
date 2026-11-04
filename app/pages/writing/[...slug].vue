@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import { author, siteUrl } from '@/data/site'
+import Figure from '@/components/content/Figure.vue'
+import Video from '@/components/content/Video.vue'
+
+// `figure` and `video` are native HTML tags, so the MDC renderer leaves them as plain elements
+// unless the component is mapped explicitly. ::callout has no native collision and resolves on
+// its own.
+const mdcComponents = { figure: Figure, video: Video }
 
 const route = useRoute()
 const { t, locale } = useI18n()
@@ -105,7 +112,7 @@ useHead(() => ({
     <!-- Body + TOC rail -->
     <div class="grid gap-x-10 pt-10 lg:grid-cols-[1fr_15rem]">
       <div class="prose min-w-0 max-w-[44rem]">
-        <ContentRenderer :value="post" />
+        <ContentRenderer :value="post" :components="mdcComponents" />
       </div>
 
       <aside v-if="tocLinks.length" class="hidden lg:block">

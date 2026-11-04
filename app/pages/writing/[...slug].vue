@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { author, siteUrl } from '@/data/site'
+
 const route = useRoute()
 const { t, locale } = useI18n()
 
@@ -14,15 +16,49 @@ const langName = computed(() => (post.value?.lang === 'vi' ? 'Tiếng Việt' : 
 const displayDate = computed(() => (post.value?.date ? String(post.value.date).slice(0, 10) : ''))
 const tocLinks = computed<any[]>(() => (post.value as any)?.body?.toc?.links ?? [])
 
+// SEO. The page URL is always the self URL; `canonical` in frontmatter (an abstract of an
+// external original) overrides it so search engines credit the full-length source.
+const pageUrl = computed(() => `${siteUrl}${route.path}`)
+const canonicalUrl = computed(() => post.value?.canonical || pageUrl.value)
+const ogLocale = computed(() => (post.value?.lang === 'en' ? 'en_US' : 'vi_VN'))
+const jsonLd = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.value?.title,
+    description: post.value?.summary,
+    datePublished: displayDate.value,
+    inLanguage: post.value?.lang ?? 'vi',
+    keywords: (post.value?.tags ?? []).join(', '),
+    url: pageUrl.value,
+    mainEntityOfPage: canonicalUrl.value,
+    author: { '@type': 'Person', name: author.name, url: siteUrl },
+    publisher: { '@type': 'Person', name: author.name, url: siteUrl },
+  }),
+)
+
 useHead(() => ({
+  // The document language follows the post, not the UI locale: a `vi` post stays `lang="vi"`
+  // even when the chrome is switched to English.
+  htmlAttrs: { lang: post.value?.lang ?? locale.value },
   title: post.value?.title,
   meta: [
     { name: 'description', content: post.value?.summary },
     { property: 'og:title', content: post.value?.title },
     { property: 'og:description', content: post.value?.summary },
     { property: 'og:type', content: 'article' },
+    { property: 'og:url', content: pageUrl.value },
+    { property: 'og:site_name', content: author.name },
+    { property: 'og:locale', content: ogLocale.value },
+    { property: 'article:published_time', content: displayDate.value },
+    { property: 'article:author', content: author.name },
+    ...(post.value?.tags ?? []).map((tag) => ({ property: 'article:tag', content: tag })),
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: post.value?.title },
+    { name: 'twitter:description', content: post.value?.summary },
   ],
-  link: post.value?.canonical ? [{ rel: 'canonical', href: post.value.canonical }] : [],
+  link: [{ rel: 'canonical', href: canonicalUrl.value }],
+  script: [{ type: 'application/ld+json', innerHTML: jsonLd.value }],
 }))
 </script>
 

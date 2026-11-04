@@ -5,6 +5,9 @@
 export type Locale = 'vi' | 'en'
 export type LocaleText = Record<Locale, string>
 
+// Absolute origin of the deployed site (user page → root). Used for canonical/og:url/JSON-LD.
+export const siteUrl = 'https://aniadev.github.io'
+
 export const author = {
   name: 'Hải Phạm',
   handle: 'aniadev',

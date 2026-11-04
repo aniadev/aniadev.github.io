@@ -25,7 +25,7 @@
     "based": "Địa điểm",
     "writes": "Viết về",
     "location": "Hà Nội, Việt Nam",
-    "intro": "Hê lô, Ania đây. Tôi xây hệ thống on-chain (Cardano, EVM), nghiên cứu AI Agent, và có sở thích mổ xẻ các vụ tấn công bảo mật. Mọi phân tích ở đây đều có phiên bản tóm gọn, dễ hiểu cho người không làm kỹ thuật.",
+    "intro": "Tôi là Ania. Tôi xây hệ thống on-chain trên Cardano và EVM, nghiên cứu AI agent, và thích mổ xẻ các vụ tấn công bảo mật. Mỗi phân tích ở đây đều có một bản dễ hiểu cho người không làm kỹ thuật.",
     "featuredWriting": "Bài viết chọn lọc",
     "focusAreas": "Lĩnh vực trọng tâm",
     "elsewhere": "Nơi khác"
@@ -40,7 +40,11 @@
     "publishedOn": "Đăng ngày",
     "filedUnder": "Chủ đề",
     "readingTime": "{n} phút đọc",
-    "search": "Tìm bài viết..."
+    "search": "Tìm bài viết...",
+    "credits": {
+      "content": "Nội dung và kiểm duyệt",
+      "writer": "Viết bài"
+    }
   },
   "projects": {
     "title": "Dự án",

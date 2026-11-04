@@ -25,7 +25,7 @@
     "based": "Based in",
     "writes": "Writes on",
     "location": "Hà Nội, Việt Nam",
-    "intro": "Hey, I'm Ania. By day I build things that run on-chain - Cardano, Hydra, EVM - and tinker with AI agents; off-hours I take apart the odd hack and write it up here, always with a plain-language version for the non-tech crowd.",
+    "intro": "I'm Ania. I build on-chain systems on Cardano and EVM, research AI agents, and like taking security incidents apart. Every analysis here comes with a plain-language version for non-technical readers.",
     "featuredWriting": "Selected writing",
     "focusAreas": "Focus areas",
     "elsewhere": "Elsewhere"
@@ -40,7 +40,11 @@
     "publishedOn": "Published",
     "filedUnder": "Filed under",
     "readingTime": "{n} min read",
-    "search": "Search entries..."
+    "search": "Search entries...",
+    "credits": {
+      "content": "Content & review",
+      "writer": "Written by"
+    }
   },
   "projects": {
     "title": "Projects",

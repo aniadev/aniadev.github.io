@@ -12,6 +12,9 @@ tags: ['rag', 'dify', 'embedding', 'llm', 'ai-agent', 'chatbot']
 
 Bài này viết lại từ một buổi seminar nội bộ tôi trình bày ở Vtechcom. Mục tiêu của buổi đó: đi từ con số 0 tới một chatbot hỏi đáp về Bidly, phần mềm quản lý đấu thầu của team, dựng trên Dify. Không cần biết trước về AI. Mọi lỗi trong bài đều là lỗi team đã gặp thật.
 
+::video{src="/video/rag-on-tap.mp4" poster="/img/rag-on-tap-poster.webp" label="Ôn tập" caption="Bản ôn tập có giọng đọc, 4 phút 42 giây. Xem trước nếu muốn nắm mạch cả bài, hoặc xem sau để kiểm tra lại."}
+::
+
 ## Vì sao LLM cần RAG
 
 Hỏi một LLM "Ai được quyết Go/No-Go trong Bidly?", nó sẽ trả lời theo kiểu CRM nói chung. Nghe rất hợp lý, nhưng có thể sai vai trò, sai quy trình, sai tên nút. LLM chỉ biết những gì có trong dữ liệu lúc train. Bidly là phần mềm của mình, nó chưa từng đọc. Nguy hiểm ở chỗ nó trả lời rất tự tin.

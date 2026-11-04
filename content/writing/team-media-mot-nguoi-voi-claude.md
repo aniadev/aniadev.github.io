@@ -73,7 +73,13 @@ Cùng lúc, Claude gửi bảng hỏi cách đọc thuật ngữ: Galaxy, 5G, IP
 
 **Tin nhắn 3**: "Duyệt, giữ màu của mình, Galaxy 2, 5G 2, IP54 1". Claude gửi lại ba style frame cho cảnh mở đầu, cảnh giá và CTA, mỗi cảnh hai khung hình, kèm file so sánh bốn giọng và file nghe thử thuật ngữ.
 
+::figure{src="/img/a17/style-frame-gia.webp" alt="Style frame cảnh giá: máy Galaxy A17 màu xanh navy, giá niêm yết 8.790.000đ bị gạch, giá 8.090.000đ phát sáng" label="Vòng 2" caption="Style frame cảnh giá, duyệt trước khi dựng động. Mỗi cảnh có hai khung hình như thế này để người duyệt thấy điểm đầu và điểm cuối của chuyển động."}
+::
+
 **Tin nhắn 4**: "Duyệt, giọng Hải Đăng, sang Vòng 3, chỉnh lại cách ngắt nghỉ với thuật ngữ: VTechcom Labs đọc liền mạch". Sau đó là hai bản video. Âm thanh tự tổng hợp: nền, whoosh ở nhát cắt, boom khi lộ giá, riser trước CTA.
+
+::figure{src="/img/a17/6-canh-16x9-9x16.webp" alt="Ảnh trích giữa từng cảnh của hai bản video Galaxy A17: sáu cảnh bản ngang 16:9 ở trên, sáu cảnh bản dọc 9:16 ở dưới" label="Vòng 3" caption="Khung trích giữa từng cảnh: bản 16:9 ở trên, bản 9:16 ở dưới. Số 8.100.000 trong ảnh là khung đang đếm lên, giá cuối là 8.090.000đ. Cùng một code dựng ra cả hai khung hình."}
+::
 
 Lưu ý tôi đã nói trong buổi và nhắc lại ở đây: logo Samsung chỉ dùng thử nghiệm nội bộ. Quảng cáo thật cần quyền sử dụng thương hiệu.
 

@@ -54,6 +54,8 @@ useHead(() => ({
     { property: 'article:author', content: author.name },
     ...(post.value?.tags ?? []).map((tag) => ({ property: 'article:tag', content: tag })),
     { property: 'og:image', content: `${siteUrl}/og.png` },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: `${siteUrl}/og.png` },
     { name: 'twitter:title', content: post.value?.title },
